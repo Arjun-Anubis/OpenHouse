@@ -1,0 +1,26 @@
+#!/bin/bash
+
+larynx || { echo Activate enviornment; exit;}
+
+voiceify 01 scottish_english_male
+voiceify 02 scottish_english_male
+voiceify 03 judy_bieber
+voiceify 04 northern_english_male
+voiceify 05 cmu_slp
+voiceify 06 harvard
+voiceify 07 scottish_english_male
+voiceify 08 scottish_english_male
+voiceify 09 cmu_slp
+voiceify 10 scottish_english_male
+voiceify 11 cmu_slp
+voiceify 12 scottish_english_male
+voiceify 13 judy_bieber
+voiceify 14 scottish_english_male
+voiceify 14.5 northern_english_male
+voiceify 15 scottish_english_male
+voiceify 16 northern_english_male
+voiceify 17 scottish_english_male
+##### 17.5
+voiceify 18 scottish_english_male
+voiceify 19 harvard
+

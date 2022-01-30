@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -x
+rm -rf D$1
+mkdir -p D$1
+cat d$1 | larynx -v $2 --output-dir D$1 --output-naming time 2>/dev/null
+./reorder.sh D$1

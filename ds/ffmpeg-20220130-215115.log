@@ -1,0 +1,2056 @@
+ffmpeg started on 2022-01-30 at 21:51:15
+Report written to "ffmpeg-20220130-215115.log"
+Log level: 48
+Command line:
+ffmpeg -report -hide_banner -i https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg -filter_complex "[0:a:0]pan=mono|c0=0.5*FL+0.5*FR,asplit=33[ASPLIT0][ASPLIT01][ASPLIT02][ASPLIT03][ASPLIT04][ASPLIT05][ASPLIT06][ASPLIT07][ASPLIT08][ASPLIT09][ASPLIT10][ASPLIT11][ASPLIT12][ASPLIT13][ASPLIT14][ASPLIT15][ASPLIT16][ASPLIT17][ASPLIT18][ASPLIT19][ASPLIT20][ASPLIT21][ASPLIT22][ASPLIT23][ASPLIT24][ASPLIT25][ASPLIT26][ASPLIT27][ASPLIT28][ASPLIT29][ASPLIT30][ASPLIT31][ASPLIT32]; [ASPLIT01]bandpass=frequency=20:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ01]; [ASPLIT02]bandpass=frequency=25:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ02]; [ASPLIT03]bandpass=frequency=31.5:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ03]; [ASPLIT04]bandpass=frequency=40:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ04]; [ASPLIT05]bandpass=frequency=50:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ05]; [ASPLIT06]bandpass=frequency=63:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ06]; [ASPLIT07]bandpass=frequency=80:width=16:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ07]; [ASPLIT08]bandpass=frequency=100:width=16:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ08]; [ASPLIT09]bandpass=frequency=125:width=32:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ09]; [ASPLIT10]bandpass=frequency=160:width=32:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ10]; [ASPLIT11]bandpass=frequency=200:width=64:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ11]; [ASPLIT12]bandpass=frequency=250:width=64:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ12]; [ASPLIT13]bandpass=frequency=315:width=64:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ13]; [ASPLIT14]bandpass=frequency=400:width=64:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ14]; [ASPLIT15]bandpass=frequency=500:width=128:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ15]; [ASPLIT16]bandpass=frequency=630:width=128:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ16]; [ASPLIT17]bandpass=frequency=800:width=128:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ17]; [ASPLIT18]bandpass=frequency=1000:width=128:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ18]; [ASPLIT19]bandpass=frequency=1250:width=256:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ19]; [ASPLIT20]bandpass=frequency=1500:width=256:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ20]; [ASPLIT21]bandpass=frequency=2000:width=512:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ21]; [ASPLIT22]bandpass=frequency=2500:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ22]; [ASPLIT23]bandpass=frequency=3150:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ23]; [ASPLIT24]bandpass=frequency=4000:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ24]; [ASPLIT25]bandpass=frequency=5000:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ25]; [ASPLIT26]bandpass=frequency=6300:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ26]; [ASPLIT27]bandpass=frequency=8000:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ27]; [ASPLIT28]bandpass=frequency=12000:width=1024:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ28]; [ASPLIT29]bandpass=frequency=16000:width=2048:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ29]; [ASPLIT30]bandpass=frequency=20000:width=2048:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ30]; [ASPLIT31]bandpass=frequency=22000:width=2048:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ31]; [ASPLIT32]bandpass=frequency=22050:width=2048:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ32]; [EQ01][EQ02][EQ03][EQ04][EQ05][EQ06][EQ07][EQ08][EQ09][EQ10][EQ11][EQ12][EQ13][EQ14][EQ15][EQ16][EQ17][EQ18][EQ19][EQ20][EQ21][EQ22][EQ23][EQ24][EQ25][EQ26][EQ27][EQ28][EQ29][EQ30][EQ31][EQ32]hstack=inputs=32[BARS];color=color=green:size=640x360[BACKGROUND];[BACKGROUND][BARS]overlay[out]" -map "[out]" -codec:v libx264 -preset:v ultrafast -pix_fmt:v yuv420p -map "[ASPLIT0]" -codec:a aac -f mpegts pipe:1
+Splitting the commandline.
+Reading option '-report' ... matched as option 'report' (generate a report) with argument '1'.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-i' ... matched as input url with argument 'https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg'.
+Reading option '-filter_complex' ... matched as option 'filter_complex' (create a complex filtergraph) with argument '[0:a:0]pan=mono|c0=0.5*FL+0.5*FR,asplit=33[ASPLIT0][ASPLIT01][ASPLIT02][ASPLIT03][ASPLIT04][ASPLIT05][ASPLIT06][ASPLIT07][ASPLIT08][ASPLIT09][ASPLIT10][ASPLIT11][ASPLIT12][ASPLIT13][ASPLIT14][ASPLIT15][ASPLIT16][ASPLIT17][ASPLIT18][ASPLIT19][ASPLIT20][ASPLIT21][ASPLIT22][ASPLIT23][ASPLIT24][ASPLIT25][ASPLIT26][ASPLIT27][ASPLIT28][ASPLIT29][ASPLIT30][ASPLIT31][ASPLIT32]; [ASPLIT01]bandpass=frequency=20:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ01]; [ASPLIT02]bandpass=frequency=25:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ02]; [ASPLIT03]bandpass=frequency=31.5:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ03]; [ASPLIT04]bandpass=frequency=40:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '[out]'.
+Reading option '-codec:v' ... matched as option 'codec' (codec name) with argument 'libx264'.
+Reading option '-preset:v' ... matched as AVOption 'preset:v' with argument 'ultrafast'.
+Reading option '-pix_fmt:v' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '[ASPLIT0]'.
+Reading option '-codec:a' ... matched as option 'codec' (codec name) with argument 'aac'.
+Reading option '-f' ... matched as option 'f' (force format) with argument 'mpegts'.
+Reading option 'pipe:1' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option report (generate a report) with argument 1.
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option filter_complex (create a complex filtergraph) with argument [0:a:0]pan=mono|c0=0.5*FL+0.5*FR,asplit=33[ASPLIT0][ASPLIT01][ASPLIT02][ASPLIT03][ASPLIT04][ASPLIT05][ASPLIT06][ASPLIT07][ASPLIT08][ASPLIT09][ASPLIT10][ASPLIT11][ASPLIT12][ASPLIT13][ASPLIT14][ASPLIT15][ASPLIT16][ASPLIT17][ASPLIT18][ASPLIT19][ASPLIT20][ASPLIT21][ASPLIT22][ASPLIT23][ASPLIT24][ASPLIT25][ASPLIT26][ASPLIT27][ASPLIT28][ASPLIT29][ASPLIT30][ASPLIT31][ASPLIT32]; [ASPLIT01]bandpass=frequency=20:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ01]; [ASPLIT02]bandpass=frequency=25:width=4:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ02]; [ASPLIT03]bandpass=frequency=31.5:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360:h=20:o=v:t=0:v=0:m=p:s=0:ds=lin:dm=1:dmc=0xFFFFFFFF[EQ03]; [ASPLIT04]bandpass=frequency=40:width=8:width_type=h,showvolume=rate=30.000:c=0xFFFFFFFF:b=5:w=360Successfully parsed a group of options.
+Parsing a group of options: input url https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg.
+Successfully parsed a group of options.
+Opening an input file: https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg.
+[NULL @ 0x556176de5940] Opening 'https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg' for reading
+[https @ 0x556176de6240] Setting default whitelist 'http,https,tls,rtp,tcp,udp,crypto,httpproxy'
+[tcp @ 0x556176debf40] Original list of addresses:
+[tcp @ 0x556176debf40] Address 207.241.224.2 port 443
+[tcp @ 0x556176debf40] Interleaved list of addresses:
+[tcp @ 0x556176debf40] Address 207.241.224.2 port 443
+[tcp @ 0x556176debf40] Starting connection attempt to 207.241.224.2 port 443
+[tcp @ 0x556176debf40] Successfully connected to 207.241.224.2 port 443
+[https @ 0x556176de6240] request: GET /download/NeverGonnaGiveYouUp/jocofullinterview41.ogg HTTP/1.1
+User-Agent: Lavf/59.8.100
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: archive.org
+Icy-MetaData: 1
+
+
+[tcp @ 0x556176e287c0] Original list of addresses:
+[tcp @ 0x556176e287c0] Address 207.241.227.195 port 443
+[tcp @ 0x556176e287c0] Interleaved list of addresses:
+[tcp @ 0x556176e287c0] Address 207.241.227.195 port 443
+[tcp @ 0x556176e287c0] Starting connection attempt to 207.241.227.195 port 443
+[tcp @ 0x556176e287c0] Successfully connected to 207.241.227.195 port 443
+[https @ 0x556176de6240] request: GET /8/items/NeverGonnaGiveYouUp/jocofullinterview41.ogg HTTP/1.1
+User-Agent: Lavf/59.8.100
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: ia600605.us.archive.org
+Icy-MetaData: 1
+
+
+[ogg @ 0x556176de5940] Format ogg probed with size=2048 and score=100
+[tcp @ 0x556176e25f40] Original list of addresses:
+[tcp @ 0x556176e25f40] Address 207.241.227.195 port 443
+[tcp @ 0x556176e25f40] Interleaved list of addresses:
+[tcp @ 0x556176e25f40] Address 207.241.227.195 port 443
+[tcp @ 0x556176e25f40] Starting connection attempt to 207.241.227.195 port 443
+[tcp @ 0x556176e25f40] Successfully connected to 207.241.227.195 port 443
+[https @ 0x556176de6240] request: GET /8/items/NeverGonnaGiveYouUp/jocofullinterview41.ogg HTTP/1.1
+User-Agent: Lavf/59.8.100
+Accept: */*
+Range: bytes=2477031-
+Connection: close
+Host: ia600605.us.archive.org
+Icy-MetaData: 1
+
+
+[tcp @ 0x556176e23480] Original list of addresses:
+[tcp @ 0x556176e23480] Address 207.241.227.195 port 443
+[tcp @ 0x556176e23480] Interleaved list of addresses:
+[tcp @ 0x556176e23480] Address 207.241.227.195 port 443
+[tcp @ 0x556176e23480] Starting connection attempt to 207.241.227.195 port 443
+[tcp @ 0x556176e23480] Successfully connected to 207.241.227.195 port 443
+[https @ 0x556176de6240] request: GET /8/items/NeverGonnaGiveYouUp/jocofullinterview41.ogg HTTP/1.1
+User-Agent: Lavf/59.8.100
+Accept: */*
+Range: bytes=34729-
+Connection: close
+Host: ia600605.us.archive.org
+Icy-MetaData: 1
+
+
+[tcp @ 0x556176e16ec0] Original list of addresses:
+[tcp @ 0x556176e16ec0] Address 207.241.227.195 port 443
+[tcp @ 0x556176e16ec0] Interleaved list of addresses:
+[tcp @ 0x556176e16ec0] Address 207.241.227.195 port 443
+[tcp @ 0x556176e16ec0] Starting connection attempt to 207.241.227.195 port 443
+[tcp @ 0x556176e16ec0] Successfully connected to 207.241.227.195 port 443
+[https @ 0x556176de6240] request: GET /8/items/NeverGonnaGiveYouUp/jocofullinterview41.ogg HTTP/1.1
+User-Agent: Lavf/59.8.100
+Accept: */*
+Range: bytes=4154-
+Connection: close
+Host: ia600605.us.archive.org
+Icy-MetaData: 1
+
+
+[ogg @ 0x556176de5940] Before avformat_find_stream_info() pos: 34729 bytes read:145998 seeks:3 nb_streams:1
+[ogg @ 0x556176de5940] All info found
+[ogg @ 0x556176de5940] After avformat_find_stream_info() pos: 34729 bytes read:145998 seeks:3 frames:1
+Input #0, ogg, from 'https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg':
+  Duration: 00:03:28.11, start: 0.000000, bitrate: 97 kb/s
+  Stream #0:0, 1, 1/44100: Audio: vorbis, 44100 Hz, stereo, fltp, 96 kb/s
+    Metadata:
+      title           : Never Gonna Give You Up
+      artist          : Rick Astley
+      album           : The Hit Factory - The Best of Stock Aitken Waterman
+      encoded_by      : iTunes v6.0.5
+      encoder         : Lavf53.18.0
+      comment         : http://www.archive.org/details/NeverGonnaGiveYouUp
+Successfully opened the file.
+[Parsed_pan_0 @ 0x556176e2c4c0] Setting 'args' to value 'mono|c0=0.5*FL+0.5*FR'
+[Parsed_asplit_1 @ 0x556176deb880] Setting 'outputs' to value '33'
+[Parsed_bandpass_2 @ 0x556176e53f00] Setting 'frequency' to value '20'
+[Parsed_bandpass_2 @ 0x556176e53f00] Setting 'width' to value '4'
+[Parsed_bandpass_2 @ 0x556176e53f00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'b' to value '5'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'w' to value '360'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'h' to value '20'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'o' to value 'v'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 't' to value '0'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'v' to value '0'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'm' to value 'p'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 's' to value '0'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'dm' to value '1'
+[Parsed_showvolume_3 @ 0x556176e5ba00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_4 @ 0x556176e8e180] Setting 'frequency' to value '25'
+[Parsed_bandpass_4 @ 0x556176e8e180] Setting 'width' to value '4'
+[Parsed_bandpass_4 @ 0x556176e8e180] Setting 'width_type' to value 'h'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'rate' to value '30.000'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'b' to value '5'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'w' to value '360'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'h' to value '20'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'o' to value 'v'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 't' to value '0'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'v' to value '0'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'm' to value 'p'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 's' to value '0'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'ds' to value 'lin'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'dm' to value '1'
+[Parsed_showvolume_5 @ 0x556176e8e040] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_6 @ 0x556176e8e600] Setting 'frequency' to value '31.5'
+[Parsed_bandpass_6 @ 0x556176e8e600] Setting 'width' to value '8'
+[Parsed_bandpass_6 @ 0x556176e8e600] Setting 'width_type' to value 'h'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'rate' to value '30.000'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'b' to value '5'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'w' to value '360'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'h' to value '20'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'o' to value 'v'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 't' to value '0'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'v' to value '0'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'm' to value 'p'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 's' to value '0'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'ds' to value 'lin'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'dm' to value '1'
+[Parsed_showvolume_7 @ 0x556176e8f500] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_8 @ 0x556176e5b780] Setting 'frequency' to value '40'
+[Parsed_bandpass_8 @ 0x556176e5b780] Setting 'width' to value '8'
+[Parsed_bandpass_8 @ 0x556176e5b780] Setting 'width_type' to value 'h'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'rate' to value '30.000'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'b' to value '5'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'w' to value '360'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'h' to value '20'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'o' to value 'v'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 't' to value '0'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'v' to value '0'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'm' to value 'p'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 's' to value '0'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'ds' to value 'lin'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'dm' to value '1'
+[Parsed_showvolume_9 @ 0x556176e5b600] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_10 @ 0x556176e90d00] Setting 'frequency' to value '50'
+[Parsed_bandpass_10 @ 0x556176e90d00] Setting 'width' to value '8'
+[Parsed_bandpass_10 @ 0x556176e90d00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'rate' to value '30.000'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'b' to value '5'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'w' to value '360'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'h' to value '20'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'o' to value 'v'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 't' to value '0'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'v' to value '0'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'm' to value 'p'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 's' to value '0'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'ds' to value 'lin'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'dm' to value '1'
+[Parsed_showvolume_11 @ 0x556176e90000] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_12 @ 0x556176e31100] Setting 'frequency' to value '63'
+[Parsed_bandpass_12 @ 0x556176e31100] Setting 'width' to value '8'
+[Parsed_bandpass_12 @ 0x556176e31100] Setting 'width_type' to value 'h'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'b' to value '5'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'w' to value '360'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'h' to value '20'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'o' to value 'v'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 't' to value '0'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'v' to value '0'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'm' to value 'p'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 's' to value '0'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'dm' to value '1'
+[Parsed_showvolume_13 @ 0x556176e8eec0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_14 @ 0x556176e34f00] Setting 'frequency' to value '80'
+[Parsed_bandpass_14 @ 0x556176e34f00] Setting 'width' to value '16'
+[Parsed_bandpass_14 @ 0x556176e34f00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'b' to value '5'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'w' to value '360'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'h' to value '20'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'o' to value 'v'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 't' to value '0'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'v' to value '0'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'm' to value 'p'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 's' to value '0'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'dm' to value '1'
+[Parsed_showvolume_15 @ 0x556176e351c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_16 @ 0x556176e34d80] Setting 'frequency' to value '100'
+[Parsed_bandpass_16 @ 0x556176e34d80] Setting 'width' to value '16'
+[Parsed_bandpass_16 @ 0x556176e34d80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'b' to value '5'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'w' to value '360'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'h' to value '20'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'o' to value 'v'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 't' to value '0'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'v' to value '0'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'm' to value 'p'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 's' to value '0'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'dm' to value '1'
+[Parsed_showvolume_17 @ 0x556176e56d00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_18 @ 0x556176e56c00] Setting 'frequency' to value '125'
+[Parsed_bandpass_18 @ 0x556176e56c00] Setting 'width' to value '32'
+[Parsed_bandpass_18 @ 0x556176e56c00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'rate' to value '30.000'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'b' to value '5'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'w' to value '360'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'h' to value '20'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'o' to value 'v'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 't' to value '0'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'v' to value '0'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'm' to value 'p'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 's' to value '0'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'ds' to value 'lin'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'dm' to value '1'
+[Parsed_showvolume_19 @ 0x556176e58640] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_20 @ 0x556176e93900] Setting 'frequency' to value '160'
+[Parsed_bandpass_20 @ 0x556176e93900] Setting 'width' to value '32'
+[Parsed_bandpass_20 @ 0x556176e93900] Setting 'width_type' to value 'h'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'rate' to value '30.000'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'b' to value '5'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'w' to value '360'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'h' to value '20'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'o' to value 'v'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 't' to value '0'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'v' to value '0'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'm' to value 'p'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 's' to value '0'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'ds' to value 'lin'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'dm' to value '1'
+[Parsed_showvolume_21 @ 0x556176e93280] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_22 @ 0x556176e935c0] Setting 'frequency' to value '200'
+[Parsed_bandpass_22 @ 0x556176e935c0] Setting 'width' to value '64'
+[Parsed_bandpass_22 @ 0x556176e935c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'rate' to value '30.000'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'b' to value '5'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'w' to value '360'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'h' to value '20'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'o' to value 'v'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 't' to value '0'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'v' to value '0'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'm' to value 'p'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 's' to value '0'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'ds' to value 'lin'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'dm' to value '1'
+[Parsed_showvolume_23 @ 0x556176e94840] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_24 @ 0x556176e92c00] Setting 'frequency' to value '250'
+[Parsed_bandpass_24 @ 0x556176e92c00] Setting 'width' to value '64'
+[Parsed_bandpass_24 @ 0x556176e92c00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'rate' to value '30.000'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'b' to value '5'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'w' to value '360'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'h' to value '20'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'o' to value 'v'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 't' to value '0'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'v' to value '0'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'm' to value 'p'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 's' to value '0'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'ds' to value 'lin'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'dm' to value '1'
+[Parsed_showvolume_25 @ 0x556176e31800] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_26 @ 0x556176e93a40] Setting 'frequency' to value '315'
+[Parsed_bandpass_26 @ 0x556176e93a40] Setting 'width' to value '64'
+[Parsed_bandpass_26 @ 0x556176e93a40] Setting 'width_type' to value 'h'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'b' to value '5'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'w' to value '360'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'h' to value '20'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'o' to value 'v'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 't' to value '0'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'v' to value '0'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'm' to value 'p'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 's' to value '0'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'dm' to value '1'
+[Parsed_showvolume_27 @ 0x556176e59d00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_28 @ 0x556176e5ae80] Setting 'frequency' to value '400'
+[Parsed_bandpass_28 @ 0x556176e5ae80] Setting 'width' to value '64'
+[Parsed_bandpass_28 @ 0x556176e5ae80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'rate' to value '30.000'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'b' to value '5'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'w' to value '360'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'h' to value '20'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'o' to value 'v'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 't' to value '0'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'v' to value '0'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'm' to value 'p'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 's' to value '0'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'ds' to value 'lin'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'dm' to value '1'
+[Parsed_showvolume_29 @ 0x556176e90540] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_30 @ 0x556176e942c0] Setting 'frequency' to value '500'
+[Parsed_bandpass_30 @ 0x556176e942c0] Setting 'width' to value '128'
+[Parsed_bandpass_30 @ 0x556176e942c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'b' to value '5'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'w' to value '360'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'h' to value '20'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'o' to value 'v'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 't' to value '0'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'v' to value '0'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'm' to value 'p'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 's' to value '0'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'dm' to value '1'
+[Parsed_showvolume_31 @ 0x556176e59ec0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_32 @ 0x556176e73e40] Setting 'frequency' to value '630'
+[Parsed_bandpass_32 @ 0x556176e73e40] Setting 'width' to value '128'
+[Parsed_bandpass_32 @ 0x556176e73e40] Setting 'width_type' to value 'h'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'rate' to value '30.000'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'b' to value '5'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'w' to value '360'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'h' to value '20'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'o' to value 'v'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 't' to value '0'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'v' to value '0'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'm' to value 'p'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 's' to value '0'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'ds' to value 'lin'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'dm' to value '1'
+[Parsed_showvolume_33 @ 0x556176e95100] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_34 @ 0x556176e97580] Setting 'frequency' to value '800'
+[Parsed_bandpass_34 @ 0x556176e97580] Setting 'width' to value '128'
+[Parsed_bandpass_34 @ 0x556176e97580] Setting 'width_type' to value 'h'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'rate' to value '30.000'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'b' to value '5'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'w' to value '360'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'h' to value '20'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'o' to value 'v'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 't' to value '0'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'v' to value '0'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'm' to value 'p'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 's' to value '0'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'ds' to value 'lin'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'dm' to value '1'
+[Parsed_showvolume_35 @ 0x556176e90f80] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_36 @ 0x556176e972c0] Setting 'frequency' to value '1000'
+[Parsed_bandpass_36 @ 0x556176e972c0] Setting 'width' to value '128'
+[Parsed_bandpass_36 @ 0x556176e972c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'rate' to value '30.000'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'b' to value '5'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'w' to value '360'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'h' to value '20'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'o' to value 'v'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 't' to value '0'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'v' to value '0'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'm' to value 'p'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 's' to value '0'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'ds' to value 'lin'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'dm' to value '1'
+[Parsed_showvolume_37 @ 0x556176e73340] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_38 @ 0x556176e70240] Setting 'frequency' to value '1250'
+[Parsed_bandpass_38 @ 0x556176e70240] Setting 'width' to value '256'
+[Parsed_bandpass_38 @ 0x556176e70240] Setting 'width_type' to value 'h'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'rate' to value '30.000'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'b' to value '5'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'w' to value '360'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'h' to value '20'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'o' to value 'v'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 't' to value '0'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'v' to value '0'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'm' to value 'p'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 's' to value '0'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'ds' to value 'lin'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'dm' to value '1'
+[Parsed_showvolume_39 @ 0x556176e77140] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_40 @ 0x556176e78e00] Setting 'frequency' to value '1500'
+[Parsed_bandpass_40 @ 0x556176e78e00] Setting 'width' to value '256'
+[Parsed_bandpass_40 @ 0x556176e78e00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'rate' to value '30.000'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'b' to value '5'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'w' to value '360'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'h' to value '20'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'o' to value 'v'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 't' to value '0'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'v' to value '0'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'm' to value 'p'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 's' to value '0'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'ds' to value 'lin'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'dm' to value '1'
+[Parsed_showvolume_41 @ 0x556176e97e40] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_42 @ 0x556176e75e00] Setting 'frequency' to value '2000'
+[Parsed_bandpass_42 @ 0x556176e75e00] Setting 'width' to value '512'
+[Parsed_bandpass_42 @ 0x556176e75e00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'b' to value '5'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'w' to value '360'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'h' to value '20'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'o' to value 'v'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 't' to value '0'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'v' to value '0'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'm' to value 'p'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 's' to value '0'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'dm' to value '1'
+[Parsed_showvolume_43 @ 0x556176e75cc0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_44 @ 0x556176e7a680] Setting 'frequency' to value '2500'
+[Parsed_bandpass_44 @ 0x556176e7a680] Setting 'width' to value '1024'
+[Parsed_bandpass_44 @ 0x556176e7a680] Setting 'width_type' to value 'h'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'b' to value '5'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'w' to value '360'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'h' to value '20'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'o' to value 'v'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 't' to value '0'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'v' to value '0'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'm' to value 'p'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 's' to value '0'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'dm' to value '1'
+[Parsed_showvolume_45 @ 0x556176e711c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_46 @ 0x556176e7cf80] Setting 'frequency' to value '3150'
+[Parsed_bandpass_46 @ 0x556176e7cf80] Setting 'width' to value '1024'
+[Parsed_bandpass_46 @ 0x556176e7cf80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'rate' to value '30.000'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'b' to value '5'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'w' to value '360'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'h' to value '20'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'o' to value 'v'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 't' to value '0'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'v' to value '0'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'm' to value 'p'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 's' to value '0'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'ds' to value 'lin'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'dm' to value '1'
+[Parsed_showvolume_47 @ 0x556176e7a780] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_48 @ 0x556176e7ad40] Setting 'frequency' to value '4000'
+[Parsed_bandpass_48 @ 0x556176e7ad40] Setting 'width' to value '1024'
+[Parsed_bandpass_48 @ 0x556176e7ad40] Setting 'width_type' to value 'h'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'rate' to value '30.000'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'b' to value '5'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'w' to value '360'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'h' to value '20'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'o' to value 'v'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 't' to value '0'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'v' to value '0'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'm' to value 'p'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 's' to value '0'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'ds' to value 'lin'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'dm' to value '1'
+[Parsed_showvolume_49 @ 0x556176e7a900] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_50 @ 0x556176e7c500] Setting 'frequency' to value '5000'
+[Parsed_bandpass_50 @ 0x556176e7c500] Setting 'width' to value '1024'
+[Parsed_bandpass_50 @ 0x556176e7c500] Setting 'width_type' to value 'h'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'b' to value '5'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'w' to value '360'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'h' to value '20'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'o' to value 'v'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 't' to value '0'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'v' to value '0'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'm' to value 'p'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 's' to value '0'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'dm' to value '1'
+[Parsed_showvolume_51 @ 0x556176e806c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_52 @ 0x556176e7fb80] Setting 'frequency' to value '6300'
+[Parsed_bandpass_52 @ 0x556176e7fb80] Setting 'width' to value '1024'
+[Parsed_bandpass_52 @ 0x556176e7fb80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'b' to value '5'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'w' to value '360'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'h' to value '20'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'o' to value 'v'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 't' to value '0'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'v' to value '0'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'm' to value 'p'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 's' to value '0'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'dm' to value '1'
+[Parsed_showvolume_53 @ 0x556176e7fa00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_54 @ 0x556176e80a00] Setting 'frequency' to value '8000'
+[Parsed_bandpass_54 @ 0x556176e80a00] Setting 'width' to value '1024'
+[Parsed_bandpass_54 @ 0x556176e80a00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'b' to value '5'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'w' to value '360'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'h' to value '20'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'o' to value 'v'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 't' to value '0'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'v' to value '0'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'm' to value 'p'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 's' to value '0'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'dm' to value '1'
+[Parsed_showvolume_55 @ 0x556176e73a00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_56 @ 0x556176e85440] Setting 'frequency' to value '12000'
+[Parsed_bandpass_56 @ 0x556176e85440] Setting 'width' to value '1024'
+[Parsed_bandpass_56 @ 0x556176e85440] Setting 'width_type' to value 'h'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'b' to value '5'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'w' to value '360'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'h' to value '20'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'o' to value 'v'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 't' to value '0'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'v' to value '0'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'm' to value 'p'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 's' to value '0'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'dm' to value '1'
+[Parsed_showvolume_57 @ 0x556176e831c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_58 @ 0x556176e73740] Setting 'frequency' to value '16000'
+[Parsed_bandpass_58 @ 0x556176e73740] Setting 'width' to value '2048'
+[Parsed_bandpass_58 @ 0x556176e73740] Setting 'width_type' to value 'h'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'rate' to value '30.000'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'b' to value '5'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'w' to value '360'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'h' to value '20'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'o' to value 'v'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 't' to value '0'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'v' to value '0'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'm' to value 'p'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 's' to value '0'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'ds' to value 'lin'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'dm' to value '1'
+[Parsed_showvolume_59 @ 0x556176e85900] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_60 @ 0x556176e9a080] Setting 'frequency' to value '20000'
+[Parsed_bandpass_60 @ 0x556176e9a080] Setting 'width' to value '2048'
+[Parsed_bandpass_60 @ 0x556176e9a080] Setting 'width_type' to value 'h'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'rate' to value '30.000'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'b' to value '5'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'w' to value '360'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'h' to value '20'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'o' to value 'v'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 't' to value '0'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'v' to value '0'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'm' to value 'p'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 's' to value '0'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'ds' to value 'lin'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'dm' to value '1'
+[Parsed_showvolume_61 @ 0x556176e88840] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_62 @ 0x556176e9eb80] Setting 'frequency' to value '22000'
+[Parsed_bandpass_62 @ 0x556176e9eb80] Setting 'width' to value '2048'
+[Parsed_bandpass_62 @ 0x556176e9eb80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'rate' to value '30.000'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'b' to value '5'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'w' to value '360'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'h' to value '20'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'o' to value 'v'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 't' to value '0'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'v' to value '0'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'm' to value 'p'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 's' to value '0'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'ds' to value 'lin'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'dm' to value '1'
+[Parsed_showvolume_63 @ 0x556176e89e40] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_64 @ 0x556176ea3440] Setting 'frequency' to value '22050'
+[Parsed_bandpass_64 @ 0x556176ea3440] Setting 'width' to value '2048'
+[Parsed_bandpass_64 @ 0x556176ea3440] Setting 'width_type' to value 'h'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'rate' to value '30.000'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'b' to value '5'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'w' to value '360'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'h' to value '20'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'o' to value 'v'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 't' to value '0'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'v' to value '0'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'm' to value 'p'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 's' to value '0'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'ds' to value 'lin'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'dm' to value '1'
+[Parsed_showvolume_65 @ 0x556176e8b340] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_hstack_66 @ 0x556176ea9100] Setting 'inputs' to value '32'
+[Parsed_color_67 @ 0x556176e83900] Setting 'color' to value 'green'
+[Parsed_color_67 @ 0x556176e83900] Setting 'size' to value '640x360'
+[Parsed_color_67 @ 0x556176e83900] size:640x360 rate:25/1 duration:-1.000000 sar:1/1
+Parsing a group of options: output url pipe:1.
+Applying option map (set input stream mapping) with argument [out].
+Applying option codec:v (codec name) with argument libx264.
+Applying option pix_fmt:v (set pixel format) with argument yuv420p.
+Applying option map (set input stream mapping) with argument [ASPLIT0].
+Applying option codec:a (codec name) with argument aac.
+Applying option f (force format) with argument mpegts.
+Successfully parsed a group of options.
+Opening an output file: pipe:1.
+[pipe @ 0x556176e84ec0] Setting default whitelist 'crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 (vorbis) -> pan
+  overlay -> Stream #0:0 (libx264)
+  asplit:output0 -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+detected 4 logical cores
+[Parsed_pan_0 @ 0x556176e247c0] Setting 'args' to value 'mono|c0=0.5*FL+0.5*FR'
+[Parsed_asplit_1 @ 0x556176e29840] Setting 'outputs' to value '33'
+[Parsed_bandpass_2 @ 0x556176e713c0] Setting 'frequency' to value '20'
+[Parsed_bandpass_2 @ 0x556176e713c0] Setting 'width' to value '4'
+[Parsed_bandpass_2 @ 0x556176e713c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'b' to value '5'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'w' to value '360'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'h' to value '20'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'o' to value 'v'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 't' to value '0'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'v' to value '0'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'm' to value 'p'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 's' to value '0'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'dm' to value '1'
+[Parsed_showvolume_3 @ 0x556176e589c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_4 @ 0x556176e58c00] Setting 'frequency' to value '25'
+[Parsed_bandpass_4 @ 0x556176e58c00] Setting 'width' to value '4'
+[Parsed_bandpass_4 @ 0x556176e58c00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'b' to value '5'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'w' to value '360'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'h' to value '20'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'o' to value 'v'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 't' to value '0'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'v' to value '0'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'm' to value 'p'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 's' to value '0'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'dm' to value '1'
+[Parsed_showvolume_5 @ 0x556176e592c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_6 @ 0x556176e32780] Setting 'frequency' to value '31.5'
+[Parsed_bandpass_6 @ 0x556176e32780] Setting 'width' to value '8'
+[Parsed_bandpass_6 @ 0x556176e32780] Setting 'width_type' to value 'h'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'rate' to value '30.000'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'b' to value '5'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'w' to value '360'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'h' to value '20'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'o' to value 'v'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 't' to value '0'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'v' to value '0'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'm' to value 'p'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 's' to value '0'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'ds' to value 'lin'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'dm' to value '1'
+[Parsed_showvolume_7 @ 0x556176e52980] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_8 @ 0x556176e33280] Setting 'frequency' to value '40'
+[Parsed_bandpass_8 @ 0x556176e33280] Setting 'width' to value '8'
+[Parsed_bandpass_8 @ 0x556176e33280] Setting 'width_type' to value 'h'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'rate' to value '30.000'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'b' to value '5'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'w' to value '360'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'h' to value '20'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'o' to value 'v'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 't' to value '0'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'v' to value '0'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'm' to value 'p'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 's' to value '0'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'ds' to value 'lin'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'dm' to value '1'
+[Parsed_showvolume_9 @ 0x556176e32640] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_10 @ 0x556176ed1a00] Setting 'frequency' to value '50'
+[Parsed_bandpass_10 @ 0x556176ed1a00] Setting 'width' to value '8'
+[Parsed_bandpass_10 @ 0x556176ed1a00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'b' to value '5'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'w' to value '360'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'h' to value '20'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'o' to value 'v'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 't' to value '0'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'v' to value '0'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'm' to value 'p'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 's' to value '0'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'dm' to value '1'
+[Parsed_showvolume_11 @ 0x556176ed30c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_12 @ 0x556176e59600] Setting 'frequency' to value '63'
+[Parsed_bandpass_12 @ 0x556176e59600] Setting 'width' to value '8'
+[Parsed_bandpass_12 @ 0x556176e59600] Setting 'width_type' to value 'h'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'rate' to value '30.000'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'b' to value '5'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'w' to value '360'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'h' to value '20'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'o' to value 'v'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 't' to value '0'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'v' to value '0'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'm' to value 'p'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 's' to value '0'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'ds' to value 'lin'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'dm' to value '1'
+[Parsed_showvolume_13 @ 0x556176e56440] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_14 @ 0x556176e32b00] Setting 'frequency' to value '80'
+[Parsed_bandpass_14 @ 0x556176e32b00] Setting 'width' to value '16'
+[Parsed_bandpass_14 @ 0x556176e32b00] Setting 'width_type' to value 'h'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'b' to value '5'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'w' to value '360'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'h' to value '20'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'o' to value 'v'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 't' to value '0'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'v' to value '0'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'm' to value 'p'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 's' to value '0'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'dm' to value '1'
+[Parsed_showvolume_15 @ 0x556176e328c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_16 @ 0x556176e329c0] Setting 'frequency' to value '100'
+[Parsed_bandpass_16 @ 0x556176e329c0] Setting 'width' to value '16'
+[Parsed_bandpass_16 @ 0x556176e329c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'rate' to value '30.000'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'b' to value '5'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'w' to value '360'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'h' to value '20'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'o' to value 'v'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 't' to value '0'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'v' to value '0'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'm' to value 'p'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 's' to value '0'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'ds' to value 'lin'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'dm' to value '1'
+[Parsed_showvolume_17 @ 0x556176ed1900] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_18 @ 0x556176ed5440] Setting 'frequency' to value '125'
+[Parsed_bandpass_18 @ 0x556176ed5440] Setting 'width' to value '32'
+[Parsed_bandpass_18 @ 0x556176ed5440] Setting 'width_type' to value 'h'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'rate' to value '30.000'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'b' to value '5'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'w' to value '360'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'h' to value '20'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'o' to value 'v'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 't' to value '0'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'v' to value '0'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'm' to value 'p'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 's' to value '0'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'ds' to value 'lin'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'dm' to value '1'
+[Parsed_showvolume_19 @ 0x556176e78940] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_20 @ 0x556176ed4f40] Setting 'frequency' to value '160'
+[Parsed_bandpass_20 @ 0x556176ed4f40] Setting 'width' to value '32'
+[Parsed_bandpass_20 @ 0x556176ed4f40] Setting 'width_type' to value 'h'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'rate' to value '30.000'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'b' to value '5'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'w' to value '360'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'h' to value '20'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'o' to value 'v'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 't' to value '0'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'v' to value '0'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'm' to value 'p'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 's' to value '0'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'ds' to value 'lin'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'dm' to value '1'
+[Parsed_showvolume_21 @ 0x556176ed5100] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_22 @ 0x556176eb1580] Setting 'frequency' to value '200'
+[Parsed_bandpass_22 @ 0x556176eb1580] Setting 'width' to value '64'
+[Parsed_bandpass_22 @ 0x556176eb1580] Setting 'width_type' to value 'h'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'rate' to value '30.000'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'b' to value '5'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'w' to value '360'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'h' to value '20'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'o' to value 'v'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 't' to value '0'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'v' to value '0'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'm' to value 'p'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 's' to value '0'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'ds' to value 'lin'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'dm' to value '1'
+[Parsed_showvolume_23 @ 0x556176e56700] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_24 @ 0x556176e77a80] Setting 'frequency' to value '250'
+[Parsed_bandpass_24 @ 0x556176e77a80] Setting 'width' to value '64'
+[Parsed_bandpass_24 @ 0x556176e77a80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'rate' to value '30.000'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'b' to value '5'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'w' to value '360'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'h' to value '20'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'o' to value 'v'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 't' to value '0'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'v' to value '0'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'm' to value 'p'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 's' to value '0'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'ds' to value 'lin'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'dm' to value '1'
+[Parsed_showvolume_25 @ 0x556176eb2b40] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_26 @ 0x556176ed7c80] Setting 'frequency' to value '315'
+[Parsed_bandpass_26 @ 0x556176ed7c80] Setting 'width' to value '64'
+[Parsed_bandpass_26 @ 0x556176ed7c80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'rate' to value '30.000'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'b' to value '5'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'w' to value '360'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'h' to value '20'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'o' to value 'v'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 't' to value '0'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'v' to value '0'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'm' to value 'p'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 's' to value '0'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'ds' to value 'lin'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'dm' to value '1'
+[Parsed_showvolume_27 @ 0x556176ed5680] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_28 @ 0x556176ed57c0] Setting 'frequency' to value '400'
+[Parsed_bandpass_28 @ 0x556176ed57c0] Setting 'width' to value '64'
+[Parsed_bandpass_28 @ 0x556176ed57c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'rate' to value '30.000'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'b' to value '5'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'w' to value '360'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'h' to value '20'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'o' to value 'v'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 't' to value '0'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'v' to value '0'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'm' to value 'p'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 's' to value '0'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'ds' to value 'lin'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'dm' to value '1'
+[Parsed_showvolume_29 @ 0x556176ed5f40] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_30 @ 0x556176eb6bc0] Setting 'frequency' to value '500'
+[Parsed_bandpass_30 @ 0x556176eb6bc0] Setting 'width' to value '128'
+[Parsed_bandpass_30 @ 0x556176eb6bc0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'b' to value '5'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'w' to value '360'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'h' to value '20'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'o' to value 'v'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 't' to value '0'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'v' to value '0'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'm' to value 'p'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 's' to value '0'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'dm' to value '1'
+[Parsed_showvolume_31 @ 0x556176eb5b00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_32 @ 0x556176eb5740] Setting 'frequency' to value '630'
+[Parsed_bandpass_32 @ 0x556176eb5740] Setting 'width' to value '128'
+[Parsed_bandpass_32 @ 0x556176eb5740] Setting 'width_type' to value 'h'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'rate' to value '30.000'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'b' to value '5'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'w' to value '360'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'h' to value '20'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'o' to value 'v'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 't' to value '0'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'v' to value '0'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'm' to value 'p'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 's' to value '0'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'ds' to value 'lin'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'dm' to value '1'
+[Parsed_showvolume_33 @ 0x556176eb9600] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_34 @ 0x556176e7d740] Setting 'frequency' to value '800'
+[Parsed_bandpass_34 @ 0x556176e7d740] Setting 'width' to value '128'
+[Parsed_bandpass_34 @ 0x556176e7d740] Setting 'width_type' to value 'h'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'rate' to value '30.000'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'b' to value '5'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'w' to value '360'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'h' to value '20'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'o' to value 'v'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 't' to value '0'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'v' to value '0'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'm' to value 'p'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 's' to value '0'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'ds' to value 'lin'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'dm' to value '1'
+[Parsed_showvolume_35 @ 0x556176eb5000] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_36 @ 0x556176ebb180] Setting 'frequency' to value '1000'
+[Parsed_bandpass_36 @ 0x556176ebb180] Setting 'width' to value '128'
+[Parsed_bandpass_36 @ 0x556176ebb180] Setting 'width_type' to value 'h'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'rate' to value '30.000'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'b' to value '5'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'w' to value '360'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'h' to value '20'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'o' to value 'v'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 't' to value '0'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'v' to value '0'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'm' to value 'p'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 's' to value '0'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'ds' to value 'lin'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'dm' to value '1'
+[Parsed_showvolume_37 @ 0x556176eda340] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_38 @ 0x556176eb9a80] Setting 'frequency' to value '1250'
+[Parsed_bandpass_38 @ 0x556176eb9a80] Setting 'width' to value '256'
+[Parsed_bandpass_38 @ 0x556176eb9a80] Setting 'width_type' to value 'h'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'b' to value '5'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'w' to value '360'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'h' to value '20'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'o' to value 'v'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 't' to value '0'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'v' to value '0'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'm' to value 'p'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 's' to value '0'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'dm' to value '1'
+[Parsed_showvolume_39 @ 0x556176ebd8c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_40 @ 0x556176eba440] Setting 'frequency' to value '1500'
+[Parsed_bandpass_40 @ 0x556176eba440] Setting 'width' to value '256'
+[Parsed_bandpass_40 @ 0x556176eba440] Setting 'width_type' to value 'h'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'b' to value '5'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'w' to value '360'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'h' to value '20'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'o' to value 'v'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 't' to value '0'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'v' to value '0'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'm' to value 'p'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 's' to value '0'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'dm' to value '1'
+[Parsed_showvolume_41 @ 0x556176ebac00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_42 @ 0x556176ebd100] Setting 'frequency' to value '2000'
+[Parsed_bandpass_42 @ 0x556176ebd100] Setting 'width' to value '512'
+[Parsed_bandpass_42 @ 0x556176ebd100] Setting 'width_type' to value 'h'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'rate' to value '30.000'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'b' to value '5'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'w' to value '360'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'h' to value '20'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'o' to value 'v'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 't' to value '0'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'v' to value '0'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'm' to value 'p'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 's' to value '0'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'ds' to value 'lin'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'dm' to value '1'
+[Parsed_showvolume_43 @ 0x556176eb5980] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_44 @ 0x556176eba080] Setting 'frequency' to value '2500'
+[Parsed_bandpass_44 @ 0x556176eba080] Setting 'width' to value '1024'
+[Parsed_bandpass_44 @ 0x556176eba080] Setting 'width_type' to value 'h'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'rate' to value '30.000'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'b' to value '5'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'w' to value '360'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'h' to value '20'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'o' to value 'v'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 't' to value '0'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'v' to value '0'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'm' to value 'p'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 's' to value '0'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'ds' to value 'lin'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'dm' to value '1'
+[Parsed_showvolume_45 @ 0x556176ebe780] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_46 @ 0x556176ed9000] Setting 'frequency' to value '3150'
+[Parsed_bandpass_46 @ 0x556176ed9000] Setting 'width' to value '1024'
+[Parsed_bandpass_46 @ 0x556176ed9000] Setting 'width_type' to value 'h'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'b' to value '5'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'w' to value '360'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'h' to value '20'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'o' to value 'v'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 't' to value '0'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'v' to value '0'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'm' to value 'p'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 's' to value '0'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'dm' to value '1'
+[Parsed_showvolume_47 @ 0x556176ebdb00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_48 @ 0x556176ebf300] Setting 'frequency' to value '4000'
+[Parsed_bandpass_48 @ 0x556176ebf300] Setting 'width' to value '1024'
+[Parsed_bandpass_48 @ 0x556176ebf300] Setting 'width_type' to value 'h'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'rate' to value '30.000'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'b' to value '5'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'w' to value '360'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'h' to value '20'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'o' to value 'v'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 't' to value '0'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'v' to value '0'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'm' to value 'p'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 's' to value '0'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'ds' to value 'lin'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'dm' to value '1'
+[Parsed_showvolume_49 @ 0x556176ebd300] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_50 @ 0x556176ed7080] Setting 'frequency' to value '5000'
+[Parsed_bandpass_50 @ 0x556176ed7080] Setting 'width' to value '1024'
+[Parsed_bandpass_50 @ 0x556176ed7080] Setting 'width_type' to value 'h'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'rate' to value '30.000'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'b' to value '5'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'w' to value '360'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'h' to value '20'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'o' to value 'v'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 't' to value '0'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'v' to value '0'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'm' to value 'p'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 's' to value '0'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'ds' to value 'lin'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'dm' to value '1'
+[Parsed_showvolume_51 @ 0x556176edaa80] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_52 @ 0x556176ec2040] Setting 'frequency' to value '6300'
+[Parsed_bandpass_52 @ 0x556176ec2040] Setting 'width' to value '1024'
+[Parsed_bandpass_52 @ 0x556176ec2040] Setting 'width_type' to value 'h'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'b' to value '5'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'w' to value '360'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'h' to value '20'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'o' to value 'v'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 't' to value '0'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'v' to value '0'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'm' to value 'p'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 's' to value '0'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'dm' to value '1'
+[Parsed_showvolume_53 @ 0x556176ec51c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_54 @ 0x556176ec4f40] Setting 'frequency' to value '8000'
+[Parsed_bandpass_54 @ 0x556176ec4f40] Setting 'width' to value '1024'
+[Parsed_bandpass_54 @ 0x556176ec4f40] Setting 'width_type' to value 'h'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'rate' to value '30.000'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'b' to value '5'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'w' to value '360'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'h' to value '20'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'o' to value 'v'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 't' to value '0'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'v' to value '0'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'm' to value 'p'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 's' to value '0'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'ds' to value 'lin'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'dm' to value '1'
+[Parsed_showvolume_55 @ 0x556176ec5e80] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_56 @ 0x556176ec50c0] Setting 'frequency' to value '12000'
+[Parsed_bandpass_56 @ 0x556176ec50c0] Setting 'width' to value '1024'
+[Parsed_bandpass_56 @ 0x556176ec50c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'rate' to value '30.000'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'b' to value '5'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'w' to value '360'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'h' to value '20'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'o' to value 'v'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 't' to value '0'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'v' to value '0'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'm' to value 'p'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 's' to value '0'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'ds' to value 'lin'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'dm' to value '1'
+[Parsed_showvolume_57 @ 0x556176ec74c0] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_58 @ 0x556176ec88c0] Setting 'frequency' to value '16000'
+[Parsed_bandpass_58 @ 0x556176ec88c0] Setting 'width' to value '2048'
+[Parsed_bandpass_58 @ 0x556176ec88c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'rate' to value '30.000'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'b' to value '5'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'w' to value '360'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'h' to value '20'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'o' to value 'v'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 't' to value '0'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'v' to value '0'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'm' to value 'p'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 's' to value '0'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'ds' to value 'lin'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'dm' to value '1'
+[Parsed_showvolume_59 @ 0x556176ec9a00] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_60 @ 0x556176edc7c0] Setting 'frequency' to value '20000'
+[Parsed_bandpass_60 @ 0x556176edc7c0] Setting 'width' to value '2048'
+[Parsed_bandpass_60 @ 0x556176edc7c0] Setting 'width_type' to value 'h'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'rate' to value '30.000'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'b' to value '5'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'w' to value '360'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'h' to value '20'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'o' to value 'v'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 't' to value '0'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'v' to value '0'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'm' to value 'p'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 's' to value '0'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'ds' to value 'lin'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'dm' to value '1'
+[Parsed_showvolume_61 @ 0x556176ecc480] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_62 @ 0x556176ee1080] Setting 'frequency' to value '22000'
+[Parsed_bandpass_62 @ 0x556176ee1080] Setting 'width' to value '2048'
+[Parsed_bandpass_62 @ 0x556176ee1080] Setting 'width_type' to value 'h'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'rate' to value '30.000'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'b' to value '5'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'w' to value '360'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'h' to value '20'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'o' to value 'v'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 't' to value '0'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'v' to value '0'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'm' to value 'p'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 's' to value '0'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'ds' to value 'lin'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'dm' to value '1'
+[Parsed_showvolume_63 @ 0x556176eda880] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_bandpass_64 @ 0x556176ee5040] Setting 'frequency' to value '22050'
+[Parsed_bandpass_64 @ 0x556176ee5040] Setting 'width' to value '2048'
+[Parsed_bandpass_64 @ 0x556176ee5040] Setting 'width_type' to value 'h'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'rate' to value '30.000'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'c' to value '0xFFFFFFFF'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'b' to value '5'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'w' to value '360'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'h' to value '20'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'o' to value 'v'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 't' to value '0'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'v' to value '0'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'm' to value 'p'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 's' to value '0'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'ds' to value 'lin'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'dm' to value '1'
+[Parsed_showvolume_65 @ 0x556176ee5580] Setting 'dmc' to value '0xFFFFFFFF'
+[Parsed_hstack_66 @ 0x556176ec7100] Setting 'inputs' to value '32'
+[Parsed_color_67 @ 0x556176ecdfc0] Setting 'color' to value 'green'
+[Parsed_color_67 @ 0x556176ecdfc0] Setting 'size' to value '640x360'
+[Parsed_color_67 @ 0x556176ecdfc0] size:640x360 rate:25/1 duration:-1.000000 sar:1/1
+[graph_0_in_0_0 @ 0x556176ebe000] Setting 'time_base' to value '1/44100'
+[graph_0_in_0_0 @ 0x556176ebe000] Setting 'sample_rate' to value '44100'
+[graph_0_in_0_0 @ 0x556176ebe000] Setting 'sample_fmt' to value 'fltp'
+[graph_0_in_0_0 @ 0x556176ebe000] Setting 'channel_layout' to value '0x3'
+[graph_0_in_0_0 @ 0x556176ebe000] tb:1/44100 samplefmt:fltp samplerate:44100 chlayout:0x3
+[format @ 0x556176ec0180] Setting 'pix_fmts' to value 'yuv420p'
+[format_out_0_1 @ 0x556176ec0880] Setting 'sample_fmts' to value 'fltp'
+[format_out_0_1 @ 0x556176ec0880] Setting 'sample_rates' to value '96000|88200|64000|48000|44100|32000|24000|22050|16000|12000|11025|8000|7350'
+[auto_scale_0 @ 0x556176ecca00] w:iw h:ih flags:'' interl:0
+[Parsed_overlay_68 @ 0x556176ec2700] auto-inserting filter 'auto_scale_0' between the filter 'Parsed_hstack_66' and the filter 'Parsed_overlay_68'
+[AVFilterGraph @ 0x556176e7c300] query_formats: 74 queried, 240 merged, 1 already done, 0 delayed
+[Parsed_pan_0 @ 0x556176e247c0] [SWR @ 0x556176eed480] Using fltp internally between filters
+[Parsed_pan_0 @ 0x556176e247c0] o0 = 0.5 i0 + 0.5 i1
+[Parsed_bandpass_2 @ 0x556176e713c0] a=1.000285 -1.999992 0.999715:b=0.000285 0.000000 -0.000285
+[Parsed_bandpass_4 @ 0x556176e58c00] a=1.000285 -1.999987 0.999715:b=0.000285 0.000000 -0.000285
+[Parsed_bandpass_6 @ 0x556176e32780] a=1.000570 -1.999980 0.999430:b=0.000570 0.000000 -0.000570
+[Parsed_bandpass_8 @ 0x556176e33280] a=1.000570 -1.999968 0.999430:b=0.000570 0.000000 -0.000570
+[Parsed_bandpass_10 @ 0x556176ed1a00] a=1.000570 -1.999949 0.999430:b=0.000570 0.000000 -0.000570
+[Parsed_bandpass_12 @ 0x556176e59600] a=1.000570 -1.999919 0.999430:b=0.000570 0.000000 -0.000570
+[Parsed_bandpass_14 @ 0x556176e32b00] a=1.001140 -1.999870 0.998860:b=0.001140 0.000000 -0.001140
+[Parsed_bandpass_16 @ 0x556176e329c0] a=1.001140 -1.999797 0.998860:b=0.001140 0.000000 -0.001140
+[Parsed_bandpass_18 @ 0x556176ed5440] a=1.002279 -1.999683 0.997721:b=0.002279 0.000000 -0.002279
+[Parsed_bandpass_20 @ 0x556176ed4f40] a=1.002279 -1.999480 0.997721:b=0.002279 0.000000 -0.002279
+[Parsed_bandpass_22 @ 0x556176eb1580] a=1.004559 -1.999188 0.995441:b=0.004559 0.000000 -0.004559
+[Parsed_bandpass_24 @ 0x556176e77a80] a=1.004558 -1.998731 0.995442:b=0.004558 0.000000 -0.004558
+[Parsed_bandpass_26 @ 0x556176ed7c80] a=1.004558 -1.997986 0.995442:b=0.004558 0.000000 -0.004558
+[Parsed_bandpass_28 @ 0x556176ed57c0] a=1.004557 -1.996753 0.995443:b=0.004557 0.000000 -0.004557
+[Parsed_bandpass_30 @ 0x556176eb6bc0] a=1.009111 -1.994927 0.990889:b=0.009111 0.000000 -0.009111
+[Parsed_bandpass_32 @ 0x556176eb5740] a=1.009106 -1.991949 0.990894:b=0.009106 0.000000 -0.009106
+[Parsed_bandpass_34 @ 0x556176e7d740] a=1.009099 -1.987022 0.990901:b=0.009099 0.000000 -0.009099
+[Parsed_bandpass_36 @ 0x556176ebb180] a=1.009088 -1.979735 0.990912:b=0.009088 0.000000 -0.009088
+[Parsed_bandpass_38 @ 0x556176eb9a80] a=1.018141 -1.968366 0.981859:b=0.018141 0.000000 -0.018141
+[Parsed_bandpass_40 @ 0x556176eba440] a=1.018098 -1.954500 0.981902:b=0.018098 0.000000 -0.018098
+[Parsed_bandpass_42 @ 0x556176ebd100] a=1.035982 -1.919350 0.964018:b=0.035982 0.000000 -0.035982
+[Parsed_bandpass_44 @ 0x556176eba080] a=1.071415 -1.874465 0.928585:b=0.071415 0.000000 -0.071415
+[Parsed_bandpass_46 @ 0x556176ed9000] a=1.070523 -1.801938 0.929477:b=0.070523 0.000000 -0.070523
+[Parsed_bandpass_48 @ 0x556176ebf300] a=1.069062 -1.683906 0.930938:b=0.069062 0.000000 -0.069062
+[Parsed_bandpass_50 @ 0x556176ed7080] a=1.066932 -1.513618 0.933068:b=0.066932 0.000000 -0.066932
+[Parsed_bandpass_52 @ 0x556176ec2040] a=1.063539 -1.246980 0.936461:b=0.063539 0.000000 -0.063539
+[Parsed_bandpass_54 @ 0x556176ec4f40] a=1.058147 -0.835540 0.941853:b=0.058147 0.000000 -0.058147
+[Parsed_bandpass_56 @ 0x556176ec50c0] a=1.042256 0.276935 0.957744:b=0.042256 0.000000 -0.042256
+[Parsed_bandpass_58 @ 0x556176ec88c0] a=1.048584 1.301873 0.951416:b=0.048584 0.000000 -0.048584
+[Parsed_bandpass_60 @ 0x556176edc7c0] a=1.014743 1.915297 0.985257:b=0.014743 0.000000 -0.014743
+[Parsed_bandpass_62 @ 0x556176ee1080] a=1.000332 1.999949 0.999668:b=0.000332 0.000000 -0.000332
+[Parsed_bandpass_64 @ 0x556176ee5040] a=1.000000 2.000000 1.000000:b=0.000000 0.000000 -0.000000
+[Parsed_hstack_66 @ 0x556176ec7100] [framesync @ 0x556176ec6658] Selected 1/44100 time base
+[Parsed_hstack_66 @ 0x556176ec7100] [framesync @ 0x556176ec6658] Sync level 1
+[auto_scale_0 @ 0x556176ecca00] w:640 h:360 fmt:rgba sar:1/1 -> w:640 h:360 fmt:yuva420p sar:1/1 flags:0x0
+[Parsed_overlay_68 @ 0x556176ec2700] main w:640 h:360 fmt:yuv420p overlay w:640 h:360 fmt:yuva420p
+[Parsed_overlay_68 @ 0x556176ec2700] [framesync @ 0x556176ececa8] Selected 1/44100 time base
+[Parsed_overlay_68 @ 0x556176ec2700] [framesync @ 0x556176ececa8] Sync level 2
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:1.000000 t:0.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] using mv_range_thread = 24
+[libx264 @ 0x556176e84b00] using SAR=1/1
+[libx264 @ 0x556176e84b00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x556176e84b00] profile Constrained Baseline, level 3.0, 4:2:0, 8-bit
+[mpegts @ 0x556176e93400] service 1 using PCR in pid=256, pcr_period=80ms
+[mpegts @ 0x556176e93400] muxrate VBR, sdt every 500 ms, pat/pmt every 100 ms
+Output #0, mpegts, to 'pipe:1':
+  Metadata:
+    encoder         : Lavf59.8.100
+  Stream #0:0, 0, 1/90000: Video: h264, yuv420p(progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 90k tbn
+    Metadata:
+      encoder         : Lavc59.12.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1, 0, 1/90000: Audio: aac (LC), 44100 Hz, mono, fltp, 69 kb/s
+    Metadata:
+      encoder         : Lavc59.12.100 aac
+Clipping frame in rate conversion by 0.000008
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:1 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:2.000000 t:0.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:3.000000 t:0.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:4.000000 t:0.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:5.000000 t:0.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:6.000000 t:0.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:7.000000 t:0.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[Parsed_overlay_68 @ 0x556176ec2700] n:8.000000 t:0.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   0 QP=20.00 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=1500 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:9.000000 t:0.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   1 QP=13.00 NAL=2 Slice:P Poc:2   I:0    P:39   SKIP:881  size=204 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:10.000000 t:0.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   2 QP=13.00 NAL=2 Slice:P Poc:4   I:0    P:0    SKIP:920  size=11 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:11.000000 t:0.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   3 QP=12.00 NAL=2 Slice:P Poc:6   I:1    P:39   SKIP:880  size=103 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:12.000000 t:0.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   4 QP=12.00 NAL=2 Slice:P Poc:8   I:0    P:38   SKIP:882  size=97 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:13.000000 t:0.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   5 QP=12.00 NAL=2 Slice:P Poc:10  I:0    P:38   SKIP:882  size=97 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:14.000000 t:0.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   6 QP=12.00 NAL=2 Slice:P Poc:12  I:2    P:36   SKIP:882  size=180 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:15.000000 t:0.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   7 QP=20.00 NAL=2 Slice:P Poc:14  I:97   P:5    SKIP:818  size=2082 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:16.000000 t:0.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   8 QP=19.00 NAL=2 Slice:P Poc:16  I:33   P:37   SKIP:850  size=1503 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:17.000000 t:0.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=   9 QP=19.00 NAL=2 Slice:P Poc:18  I:35   P:42   SKIP:843  size=1741 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:18.000000 t:0.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  10 QP=20.00 NAL=2 Slice:P Poc:20  I:55   P:32   SKIP:833  size=2001 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:19.000000 t:0.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  11 QP=19.00 NAL=2 Slice:P Poc:22  I:45   P:43   SKIP:832  size=1928 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:20.000000 t:0.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  12 QP=19.00 NAL=2 Slice:P Poc:24  I:45   P:42   SKIP:833  size=1892 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:21.000000 t:0.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  13 QP=19.00 NAL=2 Slice:P Poc:26  I:44   P:43   SKIP:833  size=1940 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:22.000000 t:0.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  14 QP=18.00 NAL=2 Slice:P Poc:28  I:47   P:46   SKIP:827  size=2060 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:23.000000 t:0.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  15 QP=19.00 NAL=2 Slice:P Poc:30  I:58   P:42   SKIP:820  size=2380 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:24.000000 t:0.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  16 QP=19.00 NAL=2 Slice:P Poc:32  I:40   P:45   SKIP:835  size=1967 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:25.000000 t:0.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  17 QP=20.00 NAL=2 Slice:P Poc:34  I:54   P:23   SKIP:843  size=1806 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:26.000000 t:1.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  18 QP=19.00 NAL=2 Slice:P Poc:36  I:40   P:37   SKIP:843  size=1552 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:27.000000 t:1.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  19 QP=19.00 NAL=2 Slice:P Poc:38  I:43   P:43   SKIP:834  size=1892 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:28.000000 t:1.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  20 QP=20.00 NAL=2 Slice:P Poc:40  I:67   P:34   SKIP:819  size=1913 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:29.000000 t:1.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  21 QP=19.00 NAL=2 Slice:P Poc:42  I:40   P:35   SKIP:845  size=1743 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:30.000000 t:1.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  22 QP=19.00 NAL=2 Slice:P Poc:44  I:49   P:39   SKIP:832  size=1807 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:31.000000 t:1.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  23 QP=19.00 NAL=2 Slice:P Poc:46  I:49   P:40   SKIP:831  size=2025 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:32.000000 t:1.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  24 QP=19.00 NAL=2 Slice:P Poc:48  I:44   P:33   SKIP:843  size=1839 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:33.000000 t:1.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  25 QP=19.00 NAL=2 Slice:P Poc:50  I:55   P:37   SKIP:828  size=2149 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:34.000000 t:1.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  26 QP=19.00 NAL=2 Slice:P Poc:52  I:38   P:40   SKIP:842  size=1860 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:35.000000 t:1.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  27 QP=19.00 NAL=2 Slice:P Poc:54  I:39   P:39   SKIP:842  size=2046 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:36.000000 t:1.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  28 QP=19.00 NAL=2 Slice:P Poc:56  I:43   P:43   SKIP:834  size=2074 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:37.000000 t:1.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  29 QP=19.00 NAL=2 Slice:P Poc:58  I:43   P:48   SKIP:829  size=2071 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:38.000000 t:1.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  30 QP=19.00 NAL=2 Slice:P Poc:60  I:57   P:31   SKIP:832  size=2395 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:39.000000 t:1.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  31 QP=19.00 NAL=2 Slice:P Poc:62  I:39   P:44   SKIP:837  size=1883 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:40.000000 t:1.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  32 QP=19.00 NAL=2 Slice:P Poc:64  I:44   P:45   SKIP:831  size=2125 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:41.000000 t:1.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  33 QP=19.00 NAL=2 Slice:P Poc:66  I:45   P:39   SKIP:836  size=2149 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:42.000000 t:1.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  34 QP=19.00 NAL=2 Slice:P Poc:68  I:23   P:51   SKIP:846  size=1876 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:43.000000 t:1.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  35 QP=19.00 NAL=2 Slice:P Poc:70  I:48   P:41   SKIP:831  size=2686 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:44.000000 t:1.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  36 QP=17.00 NAL=2 Slice:P Poc:72  I:0    P:53   SKIP:867  size=308 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:45.000000 t:1.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  37 QP=19.00 NAL=2 Slice:P Poc:74  I:48   P:40   SKIP:832  size=2308 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:46.000000 t:1.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  38 QP=19.00 NAL=2 Slice:P Poc:76  I:43   P:48   SKIP:829  size=1990 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:47.000000 t:1.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  39 QP=18.00 NAL=2 Slice:P Poc:78  I:46   P:46   SKIP:828  size=2082 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:48.000000 t:1.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  40 QP=20.00 NAL=2 Slice:P Poc:80  I:139  P:26   SKIP:755  size=3038 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:49.000000 t:1.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  41 QP=20.00 NAL=2 Slice:P Poc:82  I:56   P:51   SKIP:813  size=1893 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:50.000000 t:1.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  42 QP=20.00 NAL=2 Slice:P Poc:84  I:69   P:55   SKIP:796  size=2295 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:51.000000 t:2.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  43 QP=20.00 NAL=2 Slice:P Poc:86  I:74   P:58   SKIP:788  size=2455 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:52.000000 t:2.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  44 QP=19.00 NAL=2 Slice:P Poc:88  I:72   P:63   SKIP:785  size=2883 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:53.000000 t:2.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  45 QP=20.00 NAL=2 Slice:P Poc:90  I:88   P:53   SKIP:779  size=3185 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:54.000000 t:2.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  46 QP=20.00 NAL=2 Slice:P Poc:92  I:89   P:50   SKIP:781  size=2609 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:55.000000 t:2.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  47 QP=20.00 NAL=2 Slice:P Poc:94  I:74   P:64   SKIP:782  size=2207 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:56.000000 t:2.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  48 QP=20.00 NAL=2 Slice:P Poc:96  I:68   P:65   SKIP:787  size=2468 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:57.000000 t:2.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  49 QP=20.00 NAL=2 Slice:P Poc:98  I:69   P:68   SKIP:783  size=2663 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:58.000000 t:2.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  50 QP=20.00 NAL=2 Slice:P Poc:100 I:113  P:51   SKIP:756  size=2996 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:59.000000 t:2.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  51 QP=20.00 NAL=2 Slice:P Poc:102 I:65   P:68   SKIP:787  size=2259 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:60.000000 t:2.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  52 QP=19.00 NAL=2 Slice:P Poc:104 I:65   P:69   SKIP:786  size=2740 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:61.000000 t:2.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  53 QP=21.00 NAL=2 Slice:P Poc:106 I:122  P:38   SKIP:760  size=2577 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:62.000000 t:2.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  54 QP=21.00 NAL=2 Slice:P Poc:108 I:95   P:54   SKIP:771  size=2226 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:63.000000 t:2.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  55 QP=21.00 NAL=2 Slice:P Poc:110 I:98   P:59   SKIP:763  size=2872 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:64.000000 t:2.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  56 QP=21.00 NAL=2 Slice:P Poc:112 I:88   P:71   SKIP:761  size=2485 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:65.000000 t:2.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  57 QP=20.00 NAL=2 Slice:P Poc:114 I:97   P:61   SKIP:762  size=2803 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:66.000000 t:2.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  58 QP=20.00 NAL=2 Slice:P Poc:116 I:89   P:69   SKIP:762  size=2764 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:67.000000 t:2.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  59 QP=20.00 NAL=2 Slice:P Poc:118 I:93   P:73   SKIP:754  size=2953 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:68.000000 t:2.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  60 QP=21.00 NAL=2 Slice:P Poc:120 I:116  P:57   SKIP:747  size=3253 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:69.000000 t:2.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  61 QP=20.00 NAL=2 Slice:P Poc:122 I:74   P:77   SKIP:769  size=2549 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:70.000000 t:2.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  62 QP=20.00 NAL=2 Slice:P Poc:124 I:77   P:76   SKIP:767  size=2565 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:71.000000 t:2.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  63 QP=20.00 NAL=2 Slice:P Poc:126 I:79   P:80   SKIP:761  size=2626 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:72.000000 t:2.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  64 QP=20.00 NAL=2 Slice:P Poc:128 I:83   P:81   SKIP:756  size=2707 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:73.000000 t:2.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  65 QP=20.00 NAL=2 Slice:P Poc:130 I:106  P:67   SKIP:747  size=3603 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:74.000000 t:2.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  66 QP=21.00 NAL=2 Slice:P Poc:132 I:125  P:64   SKIP:731  size=2925 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:75.000000 t:2.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  67 QP=21.00 NAL=2 Slice:P Poc:134 I:73   P:71   SKIP:776  size=2466 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:76.000000 t:3.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  68 QP=20.00 NAL=2 Slice:P Poc:136 I:78   P:83   SKIP:759  size=2527 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:77.000000 t:3.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  69 QP=20.00 NAL=2 Slice:P Poc:138 I:72   P:84   SKIP:764  size=2612 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:78.000000 t:3.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  70 QP=21.00 NAL=2 Slice:P Poc:140 I:102  P:74   SKIP:744  size=3260 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:79.000000 t:3.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  71 QP=20.00 NAL=2 Slice:P Poc:142 I:77   P:95   SKIP:748  size=2759 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:80.000000 t:3.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  72 QP=20.00 NAL=2 Slice:P Poc:144 I:72   P:94   SKIP:754  size=2683 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:81.000000 t:3.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  73 QP=20.00 NAL=2 Slice:P Poc:146 I:79   P:66   SKIP:775  size=2720 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:82.000000 t:3.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  74 QP=20.00 NAL=2 Slice:P Poc:148 I:65   P:78   SKIP:777  size=2340 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:83.000000 t:3.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  75 QP=20.00 NAL=2 Slice:P Poc:150 I:90   P:64   SKIP:766  size=3201 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:84.000000 t:3.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  76 QP=20.00 NAL=2 Slice:P Poc:152 I:60   P:99   SKIP:761  size=2509 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:85.000000 t:3.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  77 QP=20.00 NAL=2 Slice:P Poc:154 I:68   P:92   SKIP:760  size=2802 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:86.000000 t:3.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  78 QP=20.00 NAL=2 Slice:P Poc:156 I:68   P:86   SKIP:766  size=2648 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:87.000000 t:3.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  79 QP=21.00 NAL=2 Slice:P Poc:158 I:84   P:59   SKIP:777  size=3000 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:88.000000 t:3.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  80 QP=21.00 NAL=2 Slice:P Poc:160 I:107  P:42   SKIP:771  size=3196 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:89.000000 t:3.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  81 QP=20.00 NAL=2 Slice:P Poc:162 I:82   P:67   SKIP:771  size=2498 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:90.000000 t:3.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  82 QP=20.00 NAL=2 Slice:P Poc:164 I:84   P:71   SKIP:765  size=2590 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:91.000000 t:3.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  83 QP=20.00 NAL=2 Slice:P Poc:166 I:99   P:70   SKIP:751  size=2826 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:92.000000 t:3.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  84 QP=20.00 NAL=2 Slice:P Poc:168 I:85   P:78   SKIP:757  size=2787 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:93.000000 t:3.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  85 QP=20.00 NAL=2 Slice:P Poc:170 I:106  P:53   SKIP:761  size=3475 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:94.000000 t:3.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  86 QP=20.00 NAL=2 Slice:P Poc:172 I:112  P:61   SKIP:747  size=2656 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:95.000000 t:3.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  87 QP=20.00 NAL=2 Slice:P Poc:174 I:74   P:67   SKIP:779  size=2579 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:96.000000 t:3.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  88 QP=20.00 NAL=2 Slice:P Poc:176 I:81   P:74   SKIP:765  size=2833 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:97.000000 t:3.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  89 QP=20.00 NAL=2 Slice:P Poc:178 I:94   P:72   SKIP:754  size=2843 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:98.000000 t:3.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  90 QP=21.00 NAL=2 Slice:P Poc:180 I:96   P:57   SKIP:767  size=3224 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:99.000000 t:3.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  91 QP=20.00 NAL=2 Slice:P Poc:182 I:76   P:77   SKIP:767  size=2866 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:100.000000 t:3.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  92 QP=20.00 NAL=2 Slice:P Poc:184 I:100  P:61   SKIP:759  size=2758 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:101.000000 t:4.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  93 QP=20.00 NAL=2 Slice:P Poc:186 I:92   P:58   SKIP:770  size=2413 bytes
+frame=  101 fps=0.0 q=19.0 size=     270kB time=00:00:03.97 bitrate= 556.8kbits/s speed=7.61x    [Parsed_overlay_68 @ 0x556176ec2700] n:102.000000 t:4.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  94 QP=20.00 NAL=2 Slice:P Poc:188 I:59   P:67   SKIP:794  size=2075 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:103.000000 t:4.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  95 QP=20.00 NAL=2 Slice:P Poc:190 I:101  P:51   SKIP:768  size=3153 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:104.000000 t:4.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  96 QP=20.00 NAL=2 Slice:P Poc:192 I:74   P:74   SKIP:772  size=2547 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:105.000000 t:4.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  97 QP=20.00 NAL=2 Slice:P Poc:194 I:83   P:75   SKIP:762  size=2704 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:106.000000 t:4.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  98 QP=19.00 NAL=2 Slice:P Poc:196 I:78   P:84   SKIP:758  size=3075 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:107.000000 t:4.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame=  99 QP=20.00 NAL=2 Slice:P Poc:198 I:104  P:64   SKIP:752  size=2787 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:108.000000 t:4.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 100 QP=21.00 NAL=2 Slice:P Poc:200 I:85   P:56   SKIP:779  size=2890 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:109.000000 t:4.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 101 QP=20.00 NAL=2 Slice:P Poc:202 I:67   P:78   SKIP:775  size=2454 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:110.000000 t:4.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 102 QP=20.00 NAL=2 Slice:P Poc:204 I:71   P:79   SKIP:770  size=2417 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:111.000000 t:4.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 103 QP=20.00 NAL=2 Slice:P Poc:206 I:68   P:90   SKIP:762  size=2662 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:112.000000 t:4.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 104 QP=20.00 NAL=2 Slice:P Poc:208 I:64   P:82   SKIP:774  size=2531 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:113.000000 t:4.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 105 QP=20.00 NAL=2 Slice:P Poc:210 I:64   P:84   SKIP:772  size=2732 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:114.000000 t:4.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 106 QP=21.00 NAL=2 Slice:P Poc:212 I:130  P:38   SKIP:752  size=3015 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:115.000000 t:4.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 107 QP=20.00 NAL=2 Slice:P Poc:214 I:65   P:66   SKIP:789  size=2140 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:116.000000 t:4.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 108 QP=20.00 NAL=2 Slice:P Poc:216 I:80   P:72   SKIP:768  size=2439 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:117.000000 t:4.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 109 QP=20.00 NAL=2 Slice:P Poc:218 I:82   P:69   SKIP:769  size=2479 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:118.000000 t:4.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 110 QP=20.00 NAL=2 Slice:P Poc:220 I:106  P:47   SKIP:767  size=3423 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:119.000000 t:4.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 111 QP=20.00 NAL=2 Slice:P Poc:222 I:80   P:81   SKIP:759  size=2849 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:120.000000 t:4.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 112 QP=20.00 NAL=2 Slice:P Poc:224 I:103  P:67   SKIP:750  size=2681 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:121.000000 t:4.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 113 QP=20.00 NAL=2 Slice:P Poc:226 I:64   P:83   SKIP:773  size=2637 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:122.000000 t:4.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 114 QP=20.00 NAL=2 Slice:P Poc:228 I:70   P:73   SKIP:777  size=2741 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:123.000000 t:4.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 115 QP=20.00 NAL=2 Slice:P Poc:230 I:98   P:61   SKIP:761  size=3346 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:124.000000 t:4.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 116 QP=20.00 NAL=2 Slice:P Poc:232 I:94   P:75   SKIP:751  size=2913 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:125.000000 t:4.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 117 QP=20.00 NAL=2 Slice:P Poc:234 I:82   P:79   SKIP:759  size=2832 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:126.000000 t:5.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 118 QP=19.00 NAL=2 Slice:P Poc:236 I:77   P:80   SKIP:763  size=3375 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:127.000000 t:5.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 119 QP=20.00 NAL=2 Slice:P Poc:238 I:121  P:61   SKIP:738  size=3048 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:128.000000 t:5.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 120 QP=21.00 NAL=2 Slice:P Poc:240 I:119  P:56   SKIP:745  size=3287 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:129.000000 t:5.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 121 QP=20.00 NAL=2 Slice:P Poc:242 I:79   P:77   SKIP:764  size=2800 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:130.000000 t:5.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 122 QP=20.00 NAL=2 Slice:P Poc:244 I:71   P:87   SKIP:762  size=2494 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:131.000000 t:5.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 123 QP=20.00 NAL=2 Slice:P Poc:246 I:87   P:78   SKIP:755  size=2900 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:132.000000 t:5.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 124 QP=20.00 NAL=2 Slice:P Poc:248 I:80   P:86   SKIP:754  size=2618 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:133.000000 t:5.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 125 QP=20.00 NAL=2 Slice:P Poc:250 I:133  P:54   SKIP:733  size=3340 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:134.000000 t:5.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 126 QP=20.00 NAL=2 Slice:P Poc:252 I:71   P:76   SKIP:773  size=2273 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:135.000000 t:5.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 127 QP=20.00 NAL=2 Slice:P Poc:254 I:62   P:79   SKIP:779  size=2404 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:136.000000 t:5.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 128 QP=19.00 NAL=2 Slice:P Poc:256 I:70   P:87   SKIP:763  size=3052 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:137.000000 t:5.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 129 QP=19.00 NAL=2 Slice:P Poc:258 I:70   P:80   SKIP:770  size=2634 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:138.000000 t:5.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 130 QP=20.00 NAL=2 Slice:P Poc:260 I:94   P:62   SKIP:764  size=3108 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:139.000000 t:5.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 131 QP=20.00 NAL=2 Slice:P Poc:262 I:70   P:84   SKIP:766  size=2780 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:140.000000 t:5.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 132 QP=21.00 NAL=2 Slice:P Poc:264 I:146  P:29   SKIP:745  size=2644 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:141.000000 t:5.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 133 QP=20.00 NAL=2 Slice:P Poc:266 I:76   P:49   SKIP:795  size=2217 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:142.000000 t:5.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 134 QP=20.00 NAL=2 Slice:P Poc:268 I:84   P:56   SKIP:780  size=2159 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:143.000000 t:5.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 135 QP=20.00 NAL=2 Slice:P Poc:270 I:124  P:54   SKIP:742  size=3171 bytes
+frame=  143 fps=140 q=20.0 size=     411kB time=00:00:05.68 bitrate= 591.1kbits/s speed=5.55x    [Parsed_overlay_68 @ 0x556176ec2700] n:144.000000 t:5.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 136 QP=20.00 NAL=2 Slice:P Poc:272 I:97   P:61   SKIP:762  size=2768 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:145.000000 t:5.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 137 QP=20.00 NAL=2 Slice:P Poc:274 I:94   P:61   SKIP:765  size=2721 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:146.000000 t:5.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 138 QP=20.00 NAL=2 Slice:P Poc:276 I:93   P:61   SKIP:766  size=2769 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:147.000000 t:5.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 139 QP=20.00 NAL=2 Slice:P Poc:278 I:93   P:65   SKIP:762  size=2678 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:148.000000 t:5.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 140 QP=20.00 NAL=2 Slice:P Poc:280 I:109  P:56   SKIP:755  size=3533 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:149.000000 t:5.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 141 QP=20.00 NAL=2 Slice:P Poc:282 I:112  P:62   SKIP:746  size=2797 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:150.000000 t:5.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 142 QP=20.00 NAL=2 Slice:P Poc:284 I:96   P:62   SKIP:762  size=2380 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:151.000000 t:6.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 143 QP=20.00 NAL=2 Slice:P Poc:286 I:91   P:70   SKIP:759  size=2647 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:152.000000 t:6.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 144 QP=19.00 NAL=2 Slice:P Poc:288 I:86   P:77   SKIP:757  size=2955 bytes
+frame=  152 fps= 32 q=19.0 size=     444kB time=00:00:06.03 bitrate= 602.6kbits/s speed=1.25x    [Parsed_overlay_68 @ 0x556176ec2700] n:153.000000 t:6.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 145 QP=21.00 NAL=2 Slice:P Poc:290 I:128  P:41   SKIP:751  size=2790 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:154.000000 t:6.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 146 QP=20.00 NAL=2 Slice:P Poc:292 I:52   P:61   SKIP:807  size=1653 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:155.000000 t:6.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 147 QP=20.00 NAL=2 Slice:P Poc:294 I:85   P:66   SKIP:769  size=2505 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:156.000000 t:6.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 148 QP=20.00 NAL=2 Slice:P Poc:296 I:108  P:68   SKIP:744  size=2622 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:157.000000 t:6.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 149 QP=19.00 NAL=2 Slice:P Poc:298 I:80   P:77   SKIP:763  size=2952 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:158.000000 t:6.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 150 QP=20.00 NAL=2 Slice:P Poc:300 I:109  P:62   SKIP:749  size=3408 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:159.000000 t:6.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 151 QP=18.00 NAL=2 Slice:P Poc:302 I:0    P:62   SKIP:858  size=329 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:160.000000 t:6.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 152 QP=20.00 NAL=2 Slice:P Poc:304 I:108  P:54   SKIP:758  size=3126 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:161.000000 t:6.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 153 QP=20.00 NAL=2 Slice:P Poc:306 I:69   P:70   SKIP:781  size=2135 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:162.000000 t:6.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 154 QP=19.00 NAL=2 Slice:P Poc:308 I:67   P:91   SKIP:762  size=2763 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:163.000000 t:6.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 155 QP=20.00 NAL=2 Slice:P Poc:310 I:101  P:59   SKIP:760  size=2890 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:164.000000 t:6.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 156 QP=19.00 NAL=2 Slice:P Poc:312 I:58   P:87   SKIP:775  size=2527 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:165.000000 t:6.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 157 QP=19.00 NAL=2 Slice:P Poc:314 I:70   P:75   SKIP:775  size=2683 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:166.000000 t:6.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 158 QP=21.00 NAL=2 Slice:P Poc:316 I:134  P:51   SKIP:735  size=2827 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:167.000000 t:6.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 159 QP=20.00 NAL=2 Slice:P Poc:318 I:82   P:48   SKIP:790  size=2344 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:168.000000 t:6.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 160 QP=21.00 NAL=2 Slice:P Poc:320 I:91   P:63   SKIP:766  size=2984 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:169.000000 t:6.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 161 QP=20.00 NAL=2 Slice:P Poc:322 I:79   P:77   SKIP:764  size=2730 bytes
+frame=  169 fps= 31 q=20.0 size=     497kB time=00:00:06.71 bitrate= 606.7kbits/s speed=1.25x    [Parsed_overlay_68 @ 0x556176ec2700] n:170.000000 t:6.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 162 QP=20.00 NAL=2 Slice:P Poc:324 I:107  P:79   SKIP:734  size=2872 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:171.000000 t:6.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 163 QP=20.00 NAL=2 Slice:P Poc:326 I:84   P:77   SKIP:759  size=3036 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:172.000000 t:6.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 164 QP=20.00 NAL=2 Slice:P Poc:328 I:85   P:79   SKIP:756  size=2928 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:173.000000 t:6.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 165 QP=21.00 NAL=2 Slice:P Poc:330 I:89   P:67   SKIP:764  size=3212 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:174.000000 t:6.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 166 QP=20.00 NAL=2 Slice:P Poc:332 I:68   P:84   SKIP:768  size=2729 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:175.000000 t:6.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 167 QP=20.00 NAL=2 Slice:P Poc:334 I:71   P:82   SKIP:767  size=2842 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:176.000000 t:7.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 168 QP=20.00 NAL=2 Slice:P Poc:336 I:69   P:87   SKIP:764  size=2815 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:177.000000 t:7.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 169 QP=20.00 NAL=2 Slice:P Poc:338 I:72   P:89   SKIP:759  size=2939 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:178.000000 t:7.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 170 QP=20.00 NAL=2 Slice:P Poc:340 I:98   P:67   SKIP:755  size=3713 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:179.000000 t:7.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 171 QP=18.00 NAL=2 Slice:P Poc:342 I:3    P:80   SKIP:837  size=462 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:180.000000 t:7.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 172 QP=21.00 NAL=2 Slice:P Poc:344 I:99   P:52   SKIP:769  size=3105 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:181.000000 t:7.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 173 QP=20.00 NAL=2 Slice:P Poc:346 I:73   P:70   SKIP:777  size=2384 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:182.000000 t:7.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 174 QP=20.00 NAL=2 Slice:P Poc:348 I:79   P:73   SKIP:768  size=2538 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:183.000000 t:7.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 175 QP=20.00 NAL=2 Slice:P Poc:350 I:105  P:61   SKIP:754  size=3347 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:184.000000 t:7.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 176 QP=20.00 NAL=2 Slice:P Poc:352 I:77   P:83   SKIP:760  size=2662 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:185.000000 t:7.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 177 QP=20.00 NAL=2 Slice:P Poc:354 I:81   P:81   SKIP:758  size=2791 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:186.000000 t:7.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 178 QP=20.00 NAL=2 Slice:P Poc:356 I:77   P:69   SKIP:774  size=2882 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:187.000000 t:7.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 179 QP=20.00 NAL=2 Slice:P Poc:358 I:71   P:70   SKIP:779  size=2488 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:188.000000 t:7.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 180 QP=20.00 NAL=2 Slice:P Poc:360 I:88   P:66   SKIP:766  size=3333 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:189.000000 t:7.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 181 QP=20.00 NAL=2 Slice:P Poc:362 I:65   P:87   SKIP:768  size=2742 bytes
+frame=  189 fps= 32 q=20.0 size=     564kB time=00:00:07.54 bitrate= 611.8kbits/s speed=1.28x    [Parsed_overlay_68 @ 0x556176ec2700] n:190.000000 t:7.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 182 QP=20.00 NAL=2 Slice:P Poc:364 I:73   P:92   SKIP:755  size=2943 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:191.000000 t:7.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 183 QP=19.00 NAL=2 Slice:P Poc:366 I:74   P:93   SKIP:753  size=3343 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:192.000000 t:7.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 184 QP=19.00 NAL=2 Slice:P Poc:368 I:67   P:94   SKIP:759  size=3254 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:193.000000 t:7.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 185 QP=21.00 NAL=2 Slice:P Poc:370 I:141  P:27   SKIP:752  size=2891 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:194.000000 t:7.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 186 QP=20.00 NAL=2 Slice:P Poc:372 I:77   P:62   SKIP:781  size=2052 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:195.000000 t:7.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 187 QP=20.00 NAL=2 Slice:P Poc:374 I:89   P:63   SKIP:768  size=2450 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:196.000000 t:7.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 188 QP=20.00 NAL=2 Slice:P Poc:376 I:88   P:67   SKIP:765  size=2523 bytes
+frame=  196 fps= 30 q=20.0 size=     588kB time=00:00:07.82 bitrate= 615.2kbits/s speed=1.21x    [Parsed_overlay_68 @ 0x556176ec2700] n:197.000000 t:7.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 189 QP=20.00 NAL=2 Slice:P Poc:378 I:93   P:67   SKIP:760  size=2750 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:198.000000 t:7.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 190 QP=20.00 NAL=2 Slice:P Poc:380 I:116  P:50   SKIP:754  size=3311 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:199.000000 t:7.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 191 QP=18.00 NAL=2 Slice:P Poc:382 I:1    P:61   SKIP:858  size=360 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:200.000000 t:7.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 192 QP=20.00 NAL=2 Slice:P Poc:384 I:111  P:42   SKIP:767  size=3247 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:201.000000 t:8.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 193 QP=20.00 NAL=2 Slice:P Poc:386 I:88   P:64   SKIP:768  size=2705 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:202.000000 t:8.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 194 QP=20.00 NAL=2 Slice:P Poc:388 I:87   P:70   SKIP:763  size=2821 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:203.000000 t:8.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 195 QP=20.00 NAL=2 Slice:P Poc:390 I:124  P:47   SKIP:749  size=3230 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:204.000000 t:8.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 196 QP=20.00 NAL=2 Slice:P Poc:392 I:83   P:68   SKIP:769  size=2607 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:205.000000 t:8.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 197 QP=20.00 NAL=2 Slice:P Poc:394 I:90   P:67   SKIP:763  size=2657 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:206.000000 t:8.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 198 QP=21.00 NAL=2 Slice:P Poc:396 I:141  P:38   SKIP:741  size=2569 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:207.000000 t:8.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 199 QP=20.00 NAL=2 Slice:P Poc:398 I:78   P:53   SKIP:789  size=2309 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:208.000000 t:8.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 200 QP=20.00 NAL=2 Slice:P Poc:400 I:109  P:45   SKIP:766  size=2854 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:209.000000 t:8.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 201 QP=20.00 NAL=2 Slice:P Poc:402 I:91   P:65   SKIP:764  size=2415 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:210.000000 t:8.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 202 QP=20.00 NAL=2 Slice:P Poc:404 I:104  P:66   SKIP:750  size=2802 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:211.000000 t:8.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 203 QP=19.00 NAL=2 Slice:P Poc:406 I:94   P:74   SKIP:752  size=2908 bytes
+frame=  211 fps= 30 q=20.0 size=     637kB time=00:00:08.40 bitrate= 620.7kbits/s speed=1.18x    [Parsed_overlay_68 @ 0x556176ec2700] n:212.000000 t:8.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 204 QP=20.00 NAL=2 Slice:P Poc:408 I:97   P:64   SKIP:759  size=2560 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:213.000000 t:8.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 205 QP=21.00 NAL=2 Slice:P Poc:410 I:131  P:54   SKIP:735  size=3309 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:214.000000 t:8.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 206 QP=20.00 NAL=2 Slice:P Poc:412 I:77   P:76   SKIP:767  size=2440 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:215.000000 t:8.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 207 QP=20.00 NAL=2 Slice:P Poc:414 I:86   P:65   SKIP:769  size=2501 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:216.000000 t:8.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 208 QP=20.00 NAL=2 Slice:P Poc:416 I:81   P:75   SKIP:764  size=2284 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:217.000000 t:8.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 209 QP=20.00 NAL=2 Slice:P Poc:418 I:68   P:77   SKIP:775  size=2439 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:218.000000 t:8.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 210 QP=21.00 NAL=2 Slice:P Poc:420 I:116  P:41   SKIP:763  size=2817 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:219.000000 t:8.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 211 QP=20.00 NAL=2 Slice:P Poc:422 I:71   P:42   SKIP:807  size=2197 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:220.000000 t:8.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 212 QP=20.00 NAL=2 Slice:P Poc:424 I:63   P:68   SKIP:789  size=2086 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:221.000000 t:8.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 213 QP=20.00 NAL=2 Slice:P Poc:426 I:90   P:75   SKIP:755  size=2564 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:222.000000 t:8.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 214 QP=20.00 NAL=2 Slice:P Poc:428 I:94   P:71   SKIP:755  size=2794 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:223.000000 t:8.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 215 QP=21.00 NAL=2 Slice:P Poc:430 I:108  P:56   SKIP:756  size=3517 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:224.000000 t:8.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 216 QP=20.00 NAL=2 Slice:P Poc:432 I:105  P:71   SKIP:744  size=3123 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:225.000000 t:8.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 217 QP=21.00 NAL=2 Slice:P Poc:434 I:100  P:66   SKIP:754  size=2932 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:226.000000 t:9.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 218 QP=20.00 NAL=2 Slice:P Poc:436 I:79   P:72   SKIP:769  size=2632 bytes
+frame=  226 fps= 29 q=20.0 size=     687kB time=00:00:08.98 bitrate= 626.5kbits/s speed=1.16x    [Parsed_overlay_68 @ 0x556176ec2700] n:227.000000 t:9.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 219 QP=20.00 NAL=2 Slice:P Poc:438 I:79   P:79   SKIP:762  size=2717 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:228.000000 t:9.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 220 QP=20.00 NAL=2 Slice:P Poc:440 I:86   P:78   SKIP:756  size=2947 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:229.000000 t:9.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 221 QP=21.00 NAL=2 Slice:P Poc:442 I:113  P:63   SKIP:744  size=3579 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:230.000000 t:9.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 222 QP=20.00 NAL=2 Slice:P Poc:444 I:96   P:84   SKIP:740  size=3105 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:231.000000 t:9.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 223 QP=20.00 NAL=2 Slice:P Poc:446 I:82   P:85   SKIP:753  size=2990 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:232.000000 t:9.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 224 QP=20.00 NAL=2 Slice:P Poc:448 I:99   P:72   SKIP:749  size=3177 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:233.000000 t:9.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 225 QP=21.00 NAL=2 Slice:P Poc:450 I:131  P:49   SKIP:740  size=3506 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:234.000000 t:9.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 226 QP=21.00 NAL=2 Slice:P Poc:452 I:91   P:75   SKIP:754  size=2662 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:235.000000 t:9.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 227 QP=20.00 NAL=2 Slice:P Poc:454 I:98   P:74   SKIP:748  size=2927 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:236.000000 t:9.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 228 QP=20.00 NAL=2 Slice:P Poc:456 I:91   P:87   SKIP:742  size=2754 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:237.000000 t:9.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 229 QP=19.00 NAL=2 Slice:P Poc:458 I:95   P:84   SKIP:741  size=3188 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:238.000000 t:9.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 230 QP=20.00 NAL=2 Slice:P Poc:460 I:133  P:59   SKIP:728  size=3393 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:239.000000 t:9.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 231 QP=20.00 NAL=2 Slice:P Poc:462 I:82   P:69   SKIP:769  size=2373 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:240.000000 t:9.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 232 QP=20.00 NAL=2 Slice:P Poc:464 I:63   P:76   SKIP:781  size=2193 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:241.000000 t:9.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 233 QP=20.00 NAL=2 Slice:P Poc:466 I:71   P:81   SKIP:768  size=2463 bytes
+frame=  241 fps= 29 q=21.0 size=     741kB time=00:00:09.58 bitrate= 633.0kbits/s speed=1.15x    [Parsed_overlay_68 @ 0x556176ec2700] n:242.000000 t:9.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 234 QP=20.00 NAL=2 Slice:P Poc:468 I:71   P:87   SKIP:762  size=2533 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:243.000000 t:9.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 235 QP=20.00 NAL=2 Slice:P Poc:470 I:91   P:80   SKIP:749  size=3469 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:244.000000 t:9.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 236 QP=20.00 NAL=2 Slice:P Poc:472 I:101  P:82   SKIP:737  size=3121 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:245.000000 t:9.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 237 QP=21.00 NAL=2 Slice:P Poc:474 I:161  P:39   SKIP:720  size=2985 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:246.000000 t:9.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 238 QP=21.00 NAL=2 Slice:P Poc:476 I:76   P:54   SKIP:790  size=1994 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:247.000000 t:9.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 239 QP=20.00 NAL=2 Slice:P Poc:478 I:65   P:67   SKIP:788  size=2188 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:248.000000 t:9.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 240 QP=20.00 NAL=2 Slice:P Poc:480 I:112  P:59   SKIP:749  size=3281 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:249.000000 t:9.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 241 QP=20.00 NAL=2 Slice:P Poc:482 I:94   P:68   SKIP:758  size=2700 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:250.000000 t:9.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 242 QP=20.00 NAL=2 Slice:P Poc:484 I:80   P:73   SKIP:767  size=2768 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:251.000000 t:10.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 243 QP=20.00 NAL=2 Slice:P Poc:486 I:84   P:76   SKIP:760  size=3042 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:252.000000 t:10.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 244 QP=20.00 NAL=2 Slice:P Poc:488 I:93   P:78   SKIP:749  size=3132 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:253.000000 t:10.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 245 QP=21.00 NAL=2 Slice:P Poc:490 I:116  P:56   SKIP:748  size=3572 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:254.000000 t:10.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 246 QP=20.00 NAL=2 Slice:P Poc:492 I:87   P:85   SKIP:748  size=3262 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:255.000000 t:10.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 247 QP=21.00 NAL=2 Slice:P Poc:494 I:101  P:63   SKIP:756  size=2921 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:256.000000 t:10.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 248 QP=20.00 NAL=2 Slice:P Poc:496 I:70   P:62   SKIP:788  size=2173 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:257.000000 t:10.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 249 QP=20.00 NAL=2 Slice:P Poc:498 I:79   P:81   SKIP:760  size=2551 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:258.000000 t:10.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 250 QP=17.00 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=5828 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:259.000000 t:10.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 251 QP=21.00 NAL=2 Slice:P Poc:2   I:83   P:62   SKIP:775  size=2312 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:260.000000 t:10.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 252 QP=21.00 NAL=2 Slice:P Poc:4   I:84   P:73   SKIP:763  size=2227 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:261.000000 t:10.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 253 QP=20.00 NAL=2 Slice:P Poc:6   I:86   P:73   SKIP:761  size=2871 bytes
+frame=  261 fps= 30 q=20.0 size=     811kB time=00:00:10.40 bitrate= 638.3kbits/s speed=1.18x    [Parsed_overlay_68 @ 0x556176ec2700] n:262.000000 t:10.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 254 QP=20.00 NAL=2 Slice:P Poc:8   I:80   P:79   SKIP:761  size=2446 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:263.000000 t:10.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 255 QP=21.00 NAL=2 Slice:P Poc:10  I:104  P:60   SKIP:756  size=3491 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:264.000000 t:10.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 256 QP=20.00 NAL=2 Slice:P Poc:12  I:76   P:90   SKIP:754  size=2820 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:265.000000 t:10.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 257 QP=20.00 NAL=2 Slice:P Poc:14  I:80   P:70   SKIP:770  size=2595 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:266.000000 t:10.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 258 QP=20.00 NAL=2 Slice:P Poc:16  I:70   P:79   SKIP:771  size=2597 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:267.000000 t:10.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 259 QP=20.00 NAL=2 Slice:P Poc:18  I:69   P:86   SKIP:765  size=2497 bytes
+frame=  267 fps= 29 q=20.0 size=     831kB time=00:00:10.68 bitrate= 637.7kbits/s speed=1.15x    [Parsed_overlay_68 @ 0x556176ec2700] n:268.000000 t:10.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 260 QP=20.00 NAL=2 Slice:P Poc:20  I:104  P:65   SKIP:751  size=3164 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:269.000000 t:10.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 261 QP=20.00 NAL=2 Slice:P Poc:22  I:66   P:82   SKIP:772  size=2244 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:270.000000 t:10.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 262 QP=20.00 NAL=2 Slice:P Poc:24  I:60   P:85   SKIP:775  size=2437 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:271.000000 t:10.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 263 QP=20.00 NAL=2 Slice:P Poc:26  I:90   P:72   SKIP:758  size=2794 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:272.000000 t:10.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 264 QP=20.00 NAL=2 Slice:P Poc:28  I:98   P:47   SKIP:775  size=2194 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:273.000000 t:10.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 265 QP=21.00 NAL=2 Slice:P Poc:30  I:93   P:54   SKIP:773  size=3072 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:274.000000 t:10.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 266 QP=21.00 NAL=2 Slice:P Poc:32  I:84   P:74   SKIP:762  size=2647 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:275.000000 t:10.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 267 QP=20.00 NAL=2 Slice:P Poc:34  I:86   P:81   SKIP:753  size=2722 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:276.000000 t:11.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 268 QP=20.00 NAL=2 Slice:P Poc:36  I:80   P:84   SKIP:756  size=2990 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:277.000000 t:11.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 269 QP=20.00 NAL=2 Slice:P Poc:38  I:83   P:86   SKIP:751  size=3047 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:278.000000 t:11.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 270 QP=21.00 NAL=2 Slice:P Poc:40  I:104  P:63   SKIP:753  size=3373 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:279.000000 t:11.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 271 QP=20.00 NAL=2 Slice:P Poc:42  I:81   P:77   SKIP:762  size=2612 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:280.000000 t:11.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 272 QP=20.00 NAL=2 Slice:P Poc:44  I:79   P:81   SKIP:760  size=2629 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:281.000000 t:11.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 273 QP=20.00 NAL=2 Slice:P Poc:46  I:85   P:78   SKIP:757  size=2743 bytes
+frame=  281 fps= 28 q=21.0 size=     880kB time=00:00:11.21 bitrate= 642.5kbits/s speed=1.12x    [Parsed_overlay_68 @ 0x556176ec2700] n:282.000000 t:11.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 274 QP=20.00 NAL=2 Slice:P Poc:48  I:74   P:90   SKIP:756  size=2824 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:283.000000 t:11.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 275 QP=20.00 NAL=2 Slice:P Poc:50  I:110  P:66   SKIP:744  size=3647 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:284.000000 t:11.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 276 QP=21.00 NAL=2 Slice:P Poc:52  I:100  P:66   SKIP:754  size=2782 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:285.000000 t:11.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 277 QP=21.00 NAL=2 Slice:P Poc:54  I:111  P:63   SKIP:746  size=2747 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:286.000000 t:11.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 278 QP=21.00 NAL=2 Slice:P Poc:56  I:90   P:65   SKIP:765  size=2464 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:287.000000 t:11.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 279 QP=20.00 NAL=2 Slice:P Poc:58  I:76   P:73   SKIP:771  size=2797 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:288.000000 t:11.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 280 QP=21.00 NAL=2 Slice:P Poc:60  I:104  P:66   SKIP:750  size=3306 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:289.000000 t:11.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 281 QP=20.00 NAL=2 Slice:P Poc:62  I:97   P:83   SKIP:740  size=3027 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:290.000000 t:11.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 282 QP=20.00 NAL=2 Slice:P Poc:64  I:93   P:90   SKIP:737  size=3032 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:291.000000 t:11.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 283 QP=20.00 NAL=2 Slice:P Poc:66  I:109  P:81   SKIP:730  size=2817 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:292.000000 t:11.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 284 QP=20.00 NAL=2 Slice:P Poc:68  I:67   P:70   SKIP:783  size=2434 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:293.000000 t:11.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 285 QP=20.00 NAL=2 Slice:P Poc:70  I:100  P:61   SKIP:759  size=3380 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:294.000000 t:11.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 286 QP=20.00 NAL=2 Slice:P Poc:72  I:84   P:82   SKIP:754  size=2680 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:295.000000 t:11.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 287 QP=20.00 NAL=2 Slice:P Poc:74  I:75   P:92   SKIP:753  size=2824 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:296.000000 t:11.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 288 QP=20.00 NAL=2 Slice:P Poc:76  I:70   P:95   SKIP:755  size=2815 bytes
+frame=  296 fps= 28 q=20.0 size=     933kB time=00:00:11.81 bitrate= 646.4kbits/s speed=1.12x    [Parsed_overlay_68 @ 0x556176ec2700] n:297.000000 t:11.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 289 QP=20.00 NAL=2 Slice:P Poc:78  I:68   P:89   SKIP:763  size=2890 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:298.000000 t:11.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 290 QP=21.00 NAL=2 Slice:P Poc:80  I:148  P:36   SKIP:736  size=3156 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:299.000000 t:11.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 291 QP=21.00 NAL=2 Slice:P Poc:82  I:73   P:73   SKIP:774  size=2164 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:300.000000 t:11.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 292 QP=20.00 NAL=2 Slice:P Poc:84  I:79   P:80   SKIP:761  size=2696 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:301.000000 t:12.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 293 QP=20.00 NAL=2 Slice:P Poc:86  I:83   P:81   SKIP:756  size=2747 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:302.000000 t:12.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 294 QP=20.00 NAL=2 Slice:P Poc:88  I:94   P:82   SKIP:744  size=2967 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:303.000000 t:12.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 295 QP=21.00 NAL=2 Slice:P Poc:90  I:113  P:64   SKIP:743  size=3533 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:304.000000 t:12.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 296 QP=20.00 NAL=2 Slice:P Poc:92  I:103  P:67   SKIP:750  size=3096 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:305.000000 t:12.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 297 QP=20.00 NAL=2 Slice:P Poc:94  I:86   P:76   SKIP:758  size=2779 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:306.000000 t:12.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 298 QP=20.00 NAL=2 Slice:P Poc:96  I:92   P:77   SKIP:751  size=2781 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:307.000000 t:12.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 299 QP=20.00 NAL=2 Slice:P Poc:98  I:88   P:81   SKIP:751  size=2935 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:308.000000 t:12.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 300 QP=21.00 NAL=2 Slice:P Poc:100 I:124  P:66   SKIP:730  size=3568 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:309.000000 t:12.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 301 QP=20.00 NAL=2 Slice:P Poc:102 I:87   P:81   SKIP:752  size=3035 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:310.000000 t:12.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 302 QP=20.00 NAL=2 Slice:P Poc:104 I:86   P:83   SKIP:751  size=3040 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:311.000000 t:12.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 303 QP=21.00 NAL=2 Slice:P Poc:106 I:111  P:66   SKIP:743  size=2759 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:312.000000 t:12.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 304 QP=21.00 NAL=2 Slice:P Poc:108 I:111  P:70   SKIP:739  size=2516 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:313.000000 t:12.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 305 QP=21.00 NAL=2 Slice:P Poc:110 I:106  P:60   SKIP:754  size=3266 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:314.000000 t:12.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 306 QP=20.00 NAL=2 Slice:P Poc:112 I:92   P:86   SKIP:742  size=2680 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:315.000000 t:12.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 307 QP=20.00 NAL=2 Slice:P Poc:114 I:84   P:82   SKIP:754  size=2681 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:316.000000 t:12.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 308 QP=20.00 NAL=2 Slice:P Poc:116 I:80   P:87   SKIP:753  size=2727 bytes
+frame=  316 fps= 29 q=20.0 size=    1001kB time=00:00:12.63 bitrate= 649.4kbits/s speed=1.14x    [Parsed_overlay_68 @ 0x556176ec2700] n:317.000000 t:12.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 309 QP=19.00 NAL=2 Slice:P Poc:118 I:88   P:90   SKIP:742  size=3097 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:318.000000 t:12.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 310 QP=21.00 NAL=2 Slice:P Poc:120 I:97   P:67   SKIP:756  size=3291 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:319.000000 t:12.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 311 QP=20.00 NAL=2 Slice:P Poc:122 I:67   P:87   SKIP:766  size=2526 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:320.000000 t:12.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 312 QP=20.00 NAL=2 Slice:P Poc:124 I:70   P:88   SKIP:762  size=2721 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:321.000000 t:12.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 313 QP=20.00 NAL=2 Slice:P Poc:126 I:78   P:87   SKIP:755  size=2569 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:322.000000 t:12.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 314 QP=19.00 NAL=2 Slice:P Poc:128 I:64   P:97   SKIP:759  size=2826 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:323.000000 t:12.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 315 QP=20.00 NAL=2 Slice:P Poc:130 I:94   P:67   SKIP:759  size=3317 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:324.000000 t:12.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 316 QP=21.00 NAL=2 Slice:P Poc:132 I:154  P:41   SKIP:725  size=2664 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:325.000000 t:12.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 317 QP=20.00 NAL=2 Slice:P Poc:134 I:85   P:65   SKIP:770  size=2130 bytes
+frame=  325 fps= 28 q=20.0 size=    1032kB time=00:00:12.95 bitrate= 652.2kbits/s speed=1.12x    [Parsed_overlay_68 @ 0x556176ec2700] n:326.000000 t:13.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 318 QP=20.00 NAL=2 Slice:P Poc:136 I:80   P:78   SKIP:762  size=2311 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:327.000000 t:13.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 319 QP=20.00 NAL=2 Slice:P Poc:138 I:85   P:77   SKIP:758  size=2627 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:328.000000 t:13.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 320 QP=21.00 NAL=2 Slice:P Poc:140 I:96   P:69   SKIP:755  size=3107 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:329.000000 t:13.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 321 QP=20.00 NAL=2 Slice:P Poc:142 I:85   P:74   SKIP:761  size=2789 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:330.000000 t:13.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 322 QP=20.00 NAL=2 Slice:P Poc:144 I:94   P:75   SKIP:751  size=2826 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:331.000000 t:13.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 323 QP=20.00 NAL=2 Slice:P Poc:146 I:104  P:67   SKIP:749  size=2597 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:332.000000 t:13.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 324 QP=20.00 NAL=2 Slice:P Poc:148 I:76   P:75   SKIP:769  size=2574 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:333.000000 t:13.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 325 QP=21.00 NAL=2 Slice:P Poc:150 I:92   P:62   SKIP:766  size=3187 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:334.000000 t:13.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 326 QP=20.00 NAL=2 Slice:P Poc:152 I:81   P:82   SKIP:757  size=2756 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:335.000000 t:13.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 327 QP=20.00 NAL=2 Slice:P Poc:154 I:86   P:88   SKIP:746  size=2988 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:336.000000 t:13.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 328 QP=20.00 NAL=2 Slice:P Poc:156 I:83   P:82   SKIP:755  size=2879 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:337.000000 t:13.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 329 QP=20.00 NAL=2 Slice:P Poc:158 I:81   P:71   SKIP:768  size=2835 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:338.000000 t:13.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 330 QP=21.00 NAL=2 Slice:P Poc:160 I:126  P:58   SKIP:736  size=3394 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:339.000000 t:13.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 331 QP=20.00 NAL=2 Slice:P Poc:162 I:92   P:74   SKIP:754  size=2713 bytes
+frame=  339 fps= 28 q=20.0 size=    1081kB time=00:00:13.51 bitrate= 655.2kbits/s speed= 1.1x    [Parsed_overlay_68 @ 0x556176ec2700] n:340.000000 t:13.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 332 QP=20.00 NAL=2 Slice:P Poc:164 I:90   P:72   SKIP:758  size=2789 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:341.000000 t:13.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 333 QP=20.00 NAL=2 Slice:P Poc:166 I:78   P:82   SKIP:760  size=2653 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:342.000000 t:13.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 334 QP=20.00 NAL=2 Slice:P Poc:168 I:83   P:78   SKIP:759  size=2878 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:343.000000 t:13.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 335 QP=19.00 NAL=2 Slice:P Poc:170 I:78   P:90   SKIP:752  size=3164 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:344.000000 t:13.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 336 QP=20.00 NAL=2 Slice:P Poc:172 I:92   P:59   SKIP:769  size=3314 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:345.000000 t:13.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 337 QP=20.00 NAL=2 Slice:P Poc:174 I:69   P:78   SKIP:773  size=2339 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:346.000000 t:13.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 338 QP=20.00 NAL=2 Slice:P Poc:176 I:60   P:83   SKIP:777  size=2423 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:347.000000 t:13.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 339 QP=20.00 NAL=2 Slice:P Poc:178 I:73   P:81   SKIP:766  size=2598 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:348.000000 t:13.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 340 QP=20.00 NAL=2 Slice:P Poc:180 I:101  P:64   SKIP:755  size=3173 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:349.000000 t:13.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 341 QP=20.00 NAL=2 Slice:P Poc:182 I:59   P:73   SKIP:788  size=2365 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:350.000000 t:13.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 342 QP=21.00 NAL=2 Slice:P Poc:184 I:136  P:38   SKIP:746  size=2545 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:351.000000 t:14.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 343 QP=21.00 NAL=2 Slice:P Poc:186 I:88   P:44   SKIP:788  size=1908 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:352.000000 t:14.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 344 QP=20.00 NAL=2 Slice:P Poc:188 I:64   P:64   SKIP:792  size=2030 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:353.000000 t:14.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 345 QP=20.00 NAL=2 Slice:P Poc:190 I:101  P:55   SKIP:764  size=2821 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:354.000000 t:14.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 346 QP=20.00 NAL=2 Slice:P Poc:192 I:108  P:66   SKIP:746  size=2757 bytes
+frame=  354 fps= 28 q=20.0 size=    1130kB time=00:00:14.11 bitrate= 655.7kbits/s speed= 1.1x    [Parsed_overlay_68 @ 0x556176ec2700] n:355.000000 t:14.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 347 QP=20.00 NAL=2 Slice:P Poc:194 I:98   P:66   SKIP:756  size=2727 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:356.000000 t:14.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 348 QP=20.00 NAL=2 Slice:P Poc:196 I:85   P:70   SKIP:765  size=2727 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:357.000000 t:14.240000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 349 QP=20.00 NAL=2 Slice:P Poc:198 I:98   P:65   SKIP:757  size=2753 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:358.000000 t:14.280000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 350 QP=20.00 NAL=2 Slice:P Poc:200 I:110  P:58   SKIP:752  size=3493 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:359.000000 t:14.320000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 351 QP=20.00 NAL=2 Slice:P Poc:202 I:101  P:73   SKIP:746  size=2864 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:360.000000 t:14.360000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 352 QP=20.00 NAL=2 Slice:P Poc:204 I:97   P:71   SKIP:752  size=2919 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:361.000000 t:14.400000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 353 QP=20.00 NAL=2 Slice:P Poc:206 I:100  P:76   SKIP:744  size=2560 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:362.000000 t:14.440000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 354 QP=20.00 NAL=2 Slice:P Poc:208 I:86   P:79   SKIP:755  size=2640 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:363.000000 t:14.480000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 355 QP=19.00 NAL=2 Slice:P Poc:210 I:77   P:86   SKIP:757  size=2948 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:364.000000 t:14.520000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 356 QP=21.00 NAL=2 Slice:P Poc:212 I:108  P:44   SKIP:768  size=3118 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:365.000000 t:14.560000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 357 QP=20.00 NAL=2 Slice:P Poc:214 I:75   P:65   SKIP:780  size=2383 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:366.000000 t:14.600000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 358 QP=20.00 NAL=2 Slice:P Poc:216 I:100  P:62   SKIP:758  size=2723 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:367.000000 t:14.640000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 359 QP=20.00 NAL=2 Slice:P Poc:218 I:92   P:71   SKIP:757  size=2609 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:368.000000 t:14.680000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 360 QP=21.00 NAL=2 Slice:P Poc:220 I:119  P:54   SKIP:747  size=3415 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:369.000000 t:14.720000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 361 QP=20.00 NAL=2 Slice:P Poc:222 I:89   P:79   SKIP:752  size=2879 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:370.000000 t:14.760000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 362 QP=20.00 NAL=2 Slice:P Poc:224 I:89   P:61   SKIP:770  size=2707 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:371.000000 t:14.800000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 363 QP=20.00 NAL=2 Slice:P Poc:226 I:90   P:67   SKIP:763  size=2527 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:372.000000 t:14.840000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 364 QP=20.00 NAL=2 Slice:P Poc:228 I:78   P:78   SKIP:764  size=2356 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:373.000000 t:14.880000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 365 QP=20.00 NAL=2 Slice:P Poc:230 I:111  P:56   SKIP:753  size=3179 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:374.000000 t:14.920000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 366 QP=20.00 NAL=2 Slice:P Poc:232 I:84   P:86   SKIP:750  size=2441 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:375.000000 t:14.960000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 367 QP=20.00 NAL=2 Slice:P Poc:234 I:68   P:74   SKIP:778  size=2570 bytes
+frame=  375 fps= 28 q=20.0 size=    1200kB time=00:00:14.95 bitrate= 657.2kbits/s speed=1.12x    [Parsed_overlay_68 @ 0x556176ec2700] n:376.000000 t:15.000000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 368 QP=20.00 NAL=2 Slice:P Poc:236 I:76   P:81   SKIP:763  size=2724 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:377.000000 t:15.040000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 369 QP=21.00 NAL=2 Slice:P Poc:238 I:124  P:44   SKIP:752  size=2493 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:378.000000 t:15.080000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 370 QP=21.00 NAL=2 Slice:P Poc:240 I:104  P:55   SKIP:761  size=3004 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:379.000000 t:15.120000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 371 QP=21.00 NAL=2 Slice:P Poc:242 I:77   P:90   SKIP:753  size=2601 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:380.000000 t:15.160000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 372 QP=20.00 NAL=2 Slice:P Poc:244 I:98   P:68   SKIP:754  size=2916 bytes
+[Parsed_overlay_68 @ 0x556176ec2700] n:381.000000 t:15.200000 pos:nan x:0.000000 xi:0 y:0.000000 yi:0
+[libx264 @ 0x556176e84b00] frame= 373 QP=20.00 NAL=2 Slice:P Poc:246 I:105  P:77   SKIP:738  size=2944 bytes
+av_interleaved_write_frame(): Broken pipe
+No more output streams to write to, finishing.
+[libx264 @ 0x556176e84b00] frame= 374 QP=20.00 NAL=2 Slice:P Poc:248 I:91   P:75   SKIP:754  size=2888 bytes
+[libx264 @ 0x556176e84b00] frame= 375 QP=20.00 NAL=2 Slice:P Poc:250 I:94   P:72   SKIP:754  size=3010 bytes
+[libx264 @ 0x556176e84b00] frame= 376 QP=21.00 NAL=2 Slice:P Poc:252 I:102  P:66   SKIP:752  size=3464 bytes
+[libx264 @ 0x556176e84b00] frame= 377 QP=20.00 NAL=2 Slice:P Poc:254 I:79   P:88   SKIP:753  size=2802 bytes
+[libx264 @ 0x556176e84b00] frame= 378 QP=20.00 NAL=2 Slice:P Poc:256 I:80   P:82   SKIP:758  size=3008 bytes
+[libx264 @ 0x556176e84b00] frame= 379 QP=20.00 NAL=2 Slice:P Poc:258 I:78   P:81   SKIP:761  size=2946 bytes
+[libx264 @ 0x556176e84b00] frame= 380 QP=21.00 NAL=2 Slice:P Poc:260 I:109  P:62   SKIP:749  size=3603 bytes
+Error writing trailer of pipe:1: Broken pipe
+frame=  381 fps= 27 q=20.0 Lsize=    1217kB time=00:00:15.20 bitrate= 655.5kbits/s speed=1.09x    
+video:969kB audio:129kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 10.835787%
+Input file #0 (https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.ogg):
+  Input stream #0:0 (audio): 944 packets read (184080 bytes); 943 frames decoded (672192 samples); 
+  Total: 944 packets (184080 bytes) demuxed
+Output file #0 (pipe:1):
+  Output stream #0:0 (video): 381 frames encoded; 374 packets muxed (992604 bytes); 
+  Output stream #0:1 (audio): 655 frames encoded (670720 samples); 656 packets muxed (131809 bytes); 
+  Total: 1030 packets (1124413 bytes) muxed
+943 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0x556176e8f740] Statistics: 1246252 bytes written, 0 seeks, 421 writeouts
+[libx264 @ 0x556176e84b00] frame I:2     Avg QP:18.50  size:  3664
+[libx264 @ 0x556176e84b00] frame P:379   Avg QP:19.89  size:  2657
+[libx264 @ 0x556176e84b00] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0x556176e84b00] mb P  I16..4:  9.1%  0.0%  0.0%  P16..4:  7.2%  0.0%  0.0%  0.0%  0.0%    skip:83.7%
+[libx264 @ 0x556176e84b00] coded y,uvDC,uvAC intra: 34.2% 51.7% 38.9% inter: 4.6% 6.0% 2.2%
+[libx264 @ 0x556176e84b00] i16 v,h,dc,p: 46% 52%  1%  1%
+[libx264 @ 0x556176e84b00] i8c dc,h,v,p: 27% 51% 19%  3%
+[libx264 @ 0x556176e84b00] kb/s:532.45
+[aac @ 0x556176e94cc0] Qavg: 158.358
+[AVIOContext @ 0x556176e24380] Statistics: 309838 bytes read, 3 seeks
+Conversion failed!

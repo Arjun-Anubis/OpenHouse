@@ -2,6 +2,7 @@
 
 larynx || { echo Activate enviornment; exit;}
 
+voiceify 00 scottish_english_male
 voiceify 01 scottish_english_male
 voiceify 02 scottish_english_male
 voiceify 03 judy_bieber
@@ -23,4 +24,5 @@ voiceify 17 scottish_english_male
 ##### 17.5
 voiceify 18 scottish_english_male
 voiceify 19 harvard
+voiceify 21 scottish_english_male
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-larynx || { echo Activate enviornment; exit;}
+larynx -h > /dev/null || { echo Activate enviornment; exit;}
 
 voiceify 00 scottish_english_male
 voiceify 01 scottish_english_male
